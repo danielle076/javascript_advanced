@@ -6,6 +6,7 @@ Dit project bevat de volgende bestanden:
 * `arrowfunctie.js`  
 * `object.js`
 * `method.js`
+* `unittest`
 
 
 
