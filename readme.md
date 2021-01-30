@@ -1,7 +1,7 @@
 ## Inhoudsopgave ##
 
 Dit project bevat de volgende bestanden:
-* `scope.js`
+* `a_scope.js`
 * `functie.js`
 * `arrowfunctie.js`  
 * `object.js`
