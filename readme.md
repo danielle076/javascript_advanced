@@ -5,7 +5,7 @@ Dit project bevat de volgende bestanden:
 * `b_functie.js`
 * `c_arrowfunctie.js`  
 * `d_object.js`
-* `method.js`
+* `e_method.js`
 * `unittest`
 
 
