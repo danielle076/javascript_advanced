@@ -16,7 +16,7 @@ console.log(greetNick);
 // Uitkomst: 3, 4, 5 geeft 12
 // Uitkomst: 11, 3, 9 geeft 23
 function sum(a, b, c) {
-    return sum;
+    return a + b + c;
 }
 
 console.log(sum(3,4, 5));
@@ -157,3 +157,190 @@ let thirdArray = greeting (["Nick", "Nova", "Mitchel", "Arjen"])
 console.log(firstArray);
 console.log(secondArray);
 console.log(thirdArray);
+
+
+// 10. Schrijf een functie die een woord verwacht en dit omgedraaid teruggeeft. Je kunt dit zowel handmatig als met
+// ingebouwde string- en array methoden doen.
+// Uitkomst: "koekje" geeft "ejkeok"
+// Uitkomst: "vrienden" geeft "nedneirv"
+function reverseString(string) {
+    const stringArray = string.split("");
+    const reversedArray = stringArray.reverse();
+    const outputString = reversedArray.join("");
+    return outputString;
+}
+
+const outputKoekje = reverseString("koekje");
+const outputVrienden = reverseString("vrienden");
+
+console.log(outputKoekje, outputVrienden);
+
+
+// 11. Schrijf een functie die een woord verwacht checkt of dit woord een palindroom is. Een palindroom is een
+// spiegelwoord: het is hetzelfde zowel vooruit als achterstevoren. Als dit zo is, geeft de functie true terug,
+// zo niet, dan false.
+// Uitkomst: "lepel" geeft true
+// Uitkomst: "madam" geeft true
+// Uitkomst: "vrienden" geeft false
+function isPalinDroom(word) {
+    // CHEESE, you can do this in fancier ways I am sure
+    const reverseWord = reverseString(word);
+    const palindroom = reverseWord === word;
+    return palindroom;
+}
+
+const outputLepel = isPalinDroom("lepel");
+const outputMadam = isPalinDroom("madam");
+const outputVrienden2 = isPalinDroom("vrienden");
+
+console.log(outputLepel, outputMadam, outputVrienden2);
+
+
+// 12. Schrijf een functie die een string en een letter verwacht. De functie telt hoe vaak die letter voorkomt in
+// de string en geeft dit terug. Je mag hiervoor geen string- of array-methoden gebruiken.
+// Uitkomst: "Hans en marietje lopen naar de supermarkt" en "e" geeft 6
+// Uitkomst: "Hans is zijn mondkapje vergeten" en "a" geeft 2
+function countLetterInSentence(sentence, letter) {
+    let count = 0;
+    for (let index = 0; index < sentence.length; index++) {
+        const letterInSentence = sentence[index];
+        const isSameLetter = letterInSentence === letter;
+        if (isSameLetter) {
+            count = count + 1;
+        }
+    }
+    return count;
+}
+
+const outputCount = countLetterInSentence(
+    "Hans en marietje lopen naar de supermarkt",
+    "e"
+);
+
+const outputCount2 = countLetterInSentence(
+    "Hans is zijn mondkapje vergeten",
+    "a"
+);
+
+console.log(outputCount, outputCount2);
+
+
+// 13. Schrijf een functie genaamd lastEntry die de laatste entry van een array teruggeeft.
+// Als de parameter n wordt meegegeven, worden de laatste n entries van de array teruggegeven.
+// Uitkomst: lastEntry([3, 6, 9, 17, 4, 6, 25, 4]) geeft 4
+// Uitkomst: lastEntry([46, 65, 34, 204, 190, 89], 3) geeft [204, 190, 89]
+function lastEntry(array, count = 1) {
+    const firstIndexToInclude = array.length - count;
+    // using array slice to "cut the array in half" at the right index
+    const outputArray = array.slice(firstIndexToInclude);
+    return outputArray;
+}
+
+const outputArr1 = lastEntry([3, 6, 9, 17, 4, 6, 25, 4]);
+const outputArr2 = lastEntry([46, 65, 34, 204, 190, 89], 3);
+
+console.log(outputArr1, outputArr2);
+
+
+// 14. Schrijf een functie die een array van getallen verwacht. De functie geeft het hoogste getal in de array
+// terug. Je mag hier geen array-object methoden voor gebruiken zoals .max()
+// Uitkomst: [3, 6, 9, 17, 4, 6, 25] geeft 25
+// Uitkomst: [46, 65, 34, 204, 190, 89] geeft 204
+function highestNumber(numberArray) {
+    let highestSoFar = 0;
+    for (let index = 0; index < numberArray.length; index++) {
+        const numberInLoop = numberArray[index];
+        const isHighestSoFar = numberInLoop > highestSoFar;
+        if (isHighestSoFar) {
+            highestSoFar = numberInLoop;
+        }
+    }
+
+    return highestSoFar;
+}
+
+const highest1 = highestNumber([3, 6, 9, 17, 4, 6, 25]);
+const highest2 = highestNumber([46, 65, 34, 204, 190, 89]);
+
+console.log(highest1, highest2);
+
+
+// 15. Schrijf een functie die geen parameters verwacht en de getallen 1 tot 100 print.
+// Voor getallen die deelbaar zijn door 3 print je "Fizz" in plaats van het getal.
+// Voor getallen die deelbaar zijn door 5 print je "Buzz" in plaats van het getal.
+// Voor getallen die zowel deelbaar zijn door 3 als door 5, print je "FizzBuzz".
+// 1
+// 2
+// Fizz
+// 4
+// Buzz
+// Fizz
+// 7
+// 8
+// Fizz
+// Buzz
+// 11
+// Fizz
+// 13
+// 14
+// FizzBuzz
+// 16
+// 17
+// Fizz
+// 19
+// Buzz
+// Fizz
+// 22
+// 23
+// Fizz
+// Buzz
+// 26
+// Fizz
+// 28
+// 29
+// FizzBuzz
+// etc.
+
+// optie 1
+let output = [];
+
+function fizzBuzz() {
+
+    for(let count = 1; count < 101; count++) {
+
+        if (count % 3 === 0 && count % 5 === 0){
+            output.push("FizzBuzz");
+        }
+        else if (count % 3 === 0){
+            output.push("Fizz");
+        } else if (count % 5 === 0){
+            output.push("Buzz");
+        } else {
+            output.push(count);
+        }
+        console.log(output);
+    }
+}
+
+fizzBuzz();
+
+// optie 2
+function fizzBuzz2() {
+    for (let index = 1; index <= 100; index++) {
+        const number = index;
+        const divisibleBy3 = number % 3 === 0;
+        const divisibleBy5 = number % 5 === 0;
+
+        if (divisibleBy3 && !divisibleBy5) {
+            console.log("Fizz");
+        } else if (divisibleBy5 && !divisibleBy3) {
+            console.log("Buzz");
+        } else if (divisibleBy3 && divisibleBy5) {
+            console.log("FizzBuzz");
+        } else {
+            console.log(number);
+        }
+    }
+}
+
+fizzBuzz2();
