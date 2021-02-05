@@ -6,6 +6,7 @@ Dit project bevat de volgende bestanden:
 * `c_arrowfunctie.js`  
 * `d_object.js` + `d_objectVoorbeelden.js`
 * `e_method.js` +  `e_methodVoorbeelden.js`
+* `f_json.js`
 * `unittest`
 
 
