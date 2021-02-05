@@ -7,6 +7,7 @@ Dit project bevat de volgende bestanden:
 * `d_object.js` + `d_objectVoorbeelden.js`
 * `e_method.js` +  `e_methodVoorbeelden.js`
 * `f_json.js`
+* `f_arraymethodes.js`  
 * `unittest`
 
 
