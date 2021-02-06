@@ -1,4 +1,4 @@
-// JAVASCRIPT FUNCTIE SCOPE
+// JAVASCRIPT FUNCTION SCOPE
 // In JavaScript zijn er twee soorten scopes:
 // * Local scope
 // * Global scope
@@ -7,12 +7,12 @@
 // Variabelen gedefinieerd binnen een functie zijn niet toegankelijk (zichtbaar) van buiten de functie.
 
 // LOCAL VARIABELEN
-// Variabelen gedeclareerd binnen een functie, worden LOCAL aan de functie.
-// Lokale variabelen hebben functie scope: ze kunnen alleen worden benaderd vanuit de functie.
+// Variabelen gedeclareerd binnen een functie, worden lokaal aan de functie.
+// Local variabelen hebben functie scope: ze kunnen alleen worden benaderd vanuit de functie.
 
 // Voorbeeld "example"
 // Je gebruikt de variabele example in global scope, maar de variabele is defined in local scope.
-// Conclusie: variabele defined in local scope, aanroepen in global geeft ERROR
+// Uitkomst: variabele defined in local scope en aanroepen in global geeft error.
 
 {
     const example = "Daniëlle";
@@ -24,10 +24,10 @@ console.log(example); // geeft: ReferenceError: example is not defined
 // Local variabelen worden aangemaakt wanneer een functie begint, en verwijderd wanneer de functie voltooid is.
 
 // GLOBAL VARIABELEN
-// Een variabele die buiten een functie wordt gedeclareerd, wordt GLOBAL.
+// Een variabele die buiten een functie wordt gedeclareerd, wordt global.
 // Een global variabele heeft een global scope: alle scripts en functies op een webpagina hebben er toegang toe.
 
-// voorbeeld "example2"
+// Voorbeeld "example2".
 
 const example2 = "Daniëlle";
 
@@ -36,23 +36,23 @@ const example2 = "Daniëlle";
 }
 
 // MEER VOORBEELDEN LOCAL EN GLOBAL SCOPE
-// example 3: we hebben in de global scope example3 defined en we de hebben in de local example3 defined.
-// Hij pakt de waarde van local.
+// Example 3: we hebben in de global scope "example3" defined en we de hebben in de local "example3" defined.
+// Uitkomst: hij pakt de waarde van local.
 
 const example3 = "Daniëlle";
 
 {
-    const example3 = "Karin";
-    console.log(example3); // geeft Karin
+    const example3 = "Freckle";
+    console.log(example3); // geeft Freckle
 }
 
-// example 4 : we hebben in de global scope example4 defined en we de hebben in de local example4 defined.
-// Hij pakt de waarde van global.
+// Example 4: we hebben in de global scope "example4" defined en we de hebben in de local "example4" defined.
+// Uitkomst: hij pakt de waarde van global.
 
 const example4 = "Daniëlle";
 
 {
-    const example4 = "Karin";
+    const example4 = "Freckle";
 
 }
 console.log(example4); // geeft Daniëlle
@@ -62,12 +62,14 @@ console.log(example4); // geeft Daniëlle
 
 // AUTOMATISCH GLOBAL
 // Als je een waarde toekent aan een variabele die niet is gedeclareerd, wordt het automatisch een global variabele.
-// Dit codevoorbeeld zal een globale variabele declareren carName, zelfs als de waarde wordt toegewezen binnen een functie.
+// Dit voorbeeld zal een globale variabele declareren anotherExample, zelfs als de waarde wordt toegewezen binnen een functie.
 
 myFunction();
 
-// code hier kan anotherExample gebruiken
+// code kan hier anotherExample gebruiken
 
 function myFunction() {
-    anotherExample = "Daniëlle";
+    banana = "zijn lekker.";
 }
+
+console.log("Banana", banana)
