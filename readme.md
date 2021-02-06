@@ -8,7 +8,7 @@ Dit project bevat de volgende bestanden:
 * `e_method.js` +  `e_methodVoorbeelden.js`
 * `f_json.js`
 * `f_arraymethodes.js`  
-* `h_dom.js`
+* `h_dom.js` + `h_dom.html`
 * `unittest`
 
 
