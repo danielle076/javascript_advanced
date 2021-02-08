@@ -22,9 +22,9 @@ function myFunction(){
 // Binnen de functie gedragen de argumenten (de parameters) zich als lokale variabelen.
 
 // WAT HEB JE AAN EEN FUNCTIE
-// 1. code hergebruiken --> makkelijk op één plek aan te passen.
-// 2. leesbaarheid.
-// 3. je splitst je programma in kleine onderdelen.
+// 1. Code hergebruiken --> makkelijk op één plek aan te passen.
+// 2. Leesbaarheid.
+// 3. Je splitst je programma in kleine onderdelen.
 
 // FUNCTIE AANROEPEN
 // De code in de functie zal worden uitgevoerd wanneer "iets" de functie aanroept:
@@ -51,7 +51,7 @@ console.log(x); // resultaat 12
 
 // MEERDERE WAARDEN RETOURNEREN
 // Een functie kan altijd maar één terugkeerwaarde hebben.
-// Als je twee waarden wilt teruggeven, dan gebruiken we één variabele waarin we meerdere waarden kunnen stoppen: een array
+// Als je twee waarden wilt teruggeven, dan gebruiken we één variabele waarin we meerdere waarden kunnen stoppen: een array.
 
 function getAreaSizes(width, length, depth) {
     const area = width * length;
@@ -120,7 +120,7 @@ const emailText = greeting + "wil je lid worden?"
 // De waarde van "Hallo" + subject; kun je returnen.
 // Roep de functie greet5() + subject aan.
 // emailText2 gebruik je om je e-mail te sturen.
-// Check of e-mailtext2 klopt doe je met console.log .
+// Check of e-mailtext2 klopt doe je met console.log.
 function greet5(subject){
     const greeting = "Hallo " + subject;
     return greeting;

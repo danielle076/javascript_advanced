@@ -344,3 +344,17 @@ function fizzBuzz2() {
 }
 
 fizzBuzz2();
+
+
+// 16. Berekenen aan de hand van iemands leeftijd hoeveel dagen, weken of maanden nog iemand heeft tot hij 90 jaar is.
+// Ga er voor deze uitdaging van uit dat er 365 dagen in een jaar zitten, 52 weken in een jaar en 12 maanden in een jaar.
+function lifeInWeeks(age) {
+    const yearsRemaining = 90 - age;
+    const days = yearsRemaining * 365;
+    const weeks = yearsRemaining * 52;
+    const months = yearsRemaining * 12;
+
+    console.log("You have " + days + " days, " + weeks + " weeks and " + months + " months left");
+}
+
+lifeInWeeks(12);
