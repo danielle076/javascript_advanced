@@ -19,8 +19,8 @@ function sum(a, b, c) {
     return a + b + c;
 }
 
-console.log(sum(3,4, 5));
-console.log(sum(11,3, 9));
+console.log(sum(3, 4, 5));
+console.log(sum(11, 3, 9));
 
 
 // 3. Schrijf een functie die twee strings verwacht en deze aan elkaar geplakt teruggeeft.
@@ -150,9 +150,9 @@ function greeting(stringsArray) {
     return greeting;
 }
 
-let firstArray = greeting (["Piet", "Henk"]);
-let secondArray = greeting (["A", "B", "C", "D", "E", "F"]);
-let thirdArray = greeting (["Nick", "Nova", "Mitchel", "Arjen"])
+let firstArray = greeting(["Piet", "Henk"]);
+let secondArray = greeting(["A", "B", "C", "D", "E", "F"]);
+let thirdArray = greeting(["Nick", "Nova", "Mitchel", "Arjen"])
 
 console.log(firstArray);
 console.log(secondArray);
@@ -306,14 +306,13 @@ let output = [];
 
 function fizzBuzz() {
 
-    for(let count = 1; count < 101; count++) {
+    for (let count = 1; count < 101; count++) {
 
-        if (count % 3 === 0 && count % 5 === 0){
+        if (count % 3 === 0 && count % 5 === 0) {
             output.push("FizzBuzz");
-        }
-        else if (count % 3 === 0){
+        } else if (count % 3 === 0) {
             output.push("Fizz");
-        } else if (count % 5 === 0){
+        } else if (count % 5 === 0) {
             output.push("Buzz");
         } else {
             output.push(count);
@@ -358,3 +357,16 @@ function lifeInWeeks(age) {
 }
 
 lifeInWeeks(12);
+
+
+// 17. Maak een BMI-calculator. BMI = gewicht (kg) / lengte2 (m2).
+// Jouw uitdaging is om een functie te maken die gewicht en lengte als input neemt en de berekende BMI waarde als output
+// geeft. De uitvoer moet worden afgerond op het dichtstbijzijnde gehele getal.
+// De eerste parameter moet het gewicht zijn en de tweede de lengte.
+function bmiCalculator(weight, height) {
+    const bmi = weight / (height * height);
+    return bmi
+}
+
+const bmi = bmiCalculator(70, 1.69);
+console.log(Math.round(bmi));
