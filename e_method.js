@@ -182,13 +182,19 @@ console.log(Math.floor(5)); // geeft 5
 console.log(Math.floor(-5.05)); // geeft -6
 
 // Math.random() genereert een random getal tussen 0 en 1.
-function getRandomInt(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-}
+// Als we een dobbelsteenworp simuleren, hebben we 6 mogelijkheden: een willekeurig getal tussen 1 en 6. Hoe maken we
+// van dit willekeurige getal met Math.random een getal tussen 1 en 6?
+// We vermenigvuldigen het eerst met 6, zodat we een getal krijgen. Vervolgens nemen we dat getal en voeren we Math.floor
+// uit. Je ziet hier dat “n” wordt gebruikt als invoer voor deze functie floor, die naar beneden afrondt naar het
+// dichtstbijzijnde gehele getal.
+let n = Math.random();
+n = n * 6;
+n = Math.floor(n);
+console.log(n);
 
-console.log(getRandomInt(3)); // geeft 0, 1 of 2
-console.log(getRandomInt(1)); // geeft 0
-console.log(Math.random()); // geeft een nummer van 0 tot <1
+// Als we de code uitvoeren, dan kun je zien dat we getallen tussen 0 en 5 krijgen. Het bereikt nooit 6.
+// Om het te verhogen naar 6 hoeven we er alleen maar + 1 aan toe te voegen.
+n = Math.floor(n) +1;
 
 // STRING METHODS
 // toUpperCase() - veranderd alle letters in hoofdletters.
