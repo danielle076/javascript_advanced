@@ -138,6 +138,7 @@ function longestName(nameOne, nameTwo) {
 console.log(longestName("Mitchel", "Nick"));
 console.log(longestName("Nova", "Nick"));
 
+
 // 8. Schrijf twee prompts waarbij je vraagt naar de namen van twee mensen. Er wordt verder niets met deze namen gedaan.
 // Een willekeurig getal berekent een percentage (tussen de 1 en 100) en geeft deze via een alert als een love score aan
 // de gebruiker.
@@ -147,3 +148,17 @@ prompt("what is their name?");
 let loveScore = Math.random() * 100;
 loveScore = Math.floor(loveScore) + 1;
 alert("Your love score is " + loveScore + "%");
+
+// 9. Maak een array met voornamen.
+// Schrijf een prompt die een gast vraagt naar zijn/haar naam. Wanneer ze deze intypen, controleer je hun naam met alle
+// namen die in de gastenlijst staan. Als de naam bestaat geef je een alert "Welcome!" en als de naam niet bestaat
+// "Sorry, maybe next time."
+let guestList = ["Danielle", "Freckle", "Karin", "Kelly", "Chantal", "Claudia"];
+
+let guestName = prompt("What is your name?");
+
+if (guestList.includes(guestName)){
+    alert("Welcome!")
+} else {
+    alert("Sorry, maybe next time.")
+}
