@@ -29,7 +29,7 @@ const user = {} // dit is een object
 
 // #2 HOE KUN JE EEN OBJECT HERKENNEN?
 // Object is een verzameling met data dat staat tussen {}, key value pairs.
-const user = {
+const user2 = {
     firstName: "Daniëlle",
     lastName: "van den Akker"
 };
@@ -37,7 +37,7 @@ const user = {
 // OBJECT VS ARRAY
 // Een object is een verzameling, een array ook.
 // Array van bovenstaande object ziet er zo uit:
-const user = ["Daniëlle", "van den Akker"];
+const user3 = ["Daniëlle", "van den Akker"];
 
 // WANNEER ZOU JE EEN OBJECT GEBRUIKEN I.P.V. EEN ARRAY EN VICE VERSA?
 // * In een array staan dezelfde soorten data
@@ -73,12 +73,12 @@ console.log(car.owner.name); // Daniëlle
 
 // WAARDEN UIT EEN OBJECT AANSPREKEN #2
 // Key object "date produced" heeft een spatie, deze moet anders worden aangesproken.
-// I.p.v. de punt . gebruik je haakjes [] en maak je er een stuk tekst van met "" in de log.
-const car = {
+// In plaats van de punt . gebruik je haakjes [] en maak je er een stuk tekst van met "" in de log.
+const car2 = {
     color: "red",
     manufacturer: "Tesla",
     model: "S",
     "date produced": 2019 // hier zit een spatie in het keyword
 };
 
-console.log(car["date produced"]);
+console.log(car2["date produced"]);
