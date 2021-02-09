@@ -265,7 +265,7 @@ const highest2 = highestNumber([46, 65, 34, 204, 190, 89]);
 console.log(highest1, highest2);
 
 
-// 15. Schrijf een functie die geen parameters verwacht en de getallen 1 tot 100 print.
+// 15. Schrijf een functie die geen parameters verwacht en de getallen 1 t/m 100 print.
 // Voor getallen die deelbaar zijn door 3 print je "Fizz" in plaats van het getal.
 // Voor getallen die deelbaar zijn door 5 print je "Buzz" in plaats van het getal.
 // Voor getallen die zowel deelbaar zijn door 3 als door 5, print je "FizzBuzz".
@@ -284,46 +284,8 @@ console.log(highest1, highest2);
 // 13
 // 14
 // FizzBuzz
-// 16
-// 17
-// Fizz
-// 19
-// Buzz
-// Fizz
-// 22
-// 23
-// Fizz
-// Buzz
-// 26
-// Fizz
-// 28
-// 29
-// FizzBuzz
 // etc.
 
-// optie 1
-let output = [];
-
-function fizzBuzz() {
-
-    for (let count = 1; count < 101; count++) {
-
-        if (count % 3 === 0 && count % 5 === 0) {
-            output.push("FizzBuzz");
-        } else if (count % 3 === 0) {
-            output.push("Fizz");
-        } else if (count % 5 === 0) {
-            output.push("Buzz");
-        } else {
-            output.push(count);
-        }
-        console.log(output);
-    }
-}
-
-fizzBuzz();
-
-// optie 2
 function fizzBuzz2() {
     for (let index = 1; index <= 100; index++) {
         const number = index;
@@ -370,3 +332,34 @@ function bmiCalculator(weight, height) {
 
 const bmi = bmiCalculator(70, 1.69);
 console.log(Math.round(bmi));
+
+
+// 18. Fibonacci was een Italiaanse wiskundige die de Fibonacci-reeks bedacht: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89…
+// Waarbij elk getal de som is van de twee vorige, bijvoorbeeld 0, 1, 1, 2, 3, 5 komt van:
+// 0 + 1 = 1
+// 1 + 1 = 2
+// 1 + 2 = 3
+// 2 + 3 = 5 enz.
+// Maak een functie die je kan aanroepen door de code te schrijven: fibonacciGenerator (n)
+// Waarbij n het aantal items in de reeks is.
+// Wanneer je fibonacciGenerator (3) aanroept krijg je [0, 1, 1] als output.
+// BELANGRIJK: De eerste twee getallen in de reeks moeten 0 en 1 zijn.
+function fibonacciGenerator (n) {
+    let output = [];
+
+    if (n === 1){
+        output = [0];
+    } else if (n ===2){
+        output = [0, 1];
+    } else{
+        output = [0, 1];
+
+        for( let i = 2; i < n; i++) {
+
+            output.push(output[output.length - 2] + output[output.length - 1]);
+        }
+    }
+    return output;
+}
+
+console.log(fibonacciGenerator(5));
