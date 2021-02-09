@@ -162,3 +162,16 @@ if (guestList.includes(guestName)){
 } else {
     alert("Sorry, maybe next time.")
 }
+
+// 10. Schrijf een functie die een willekeurige naam selecteert uit een lijst met namen. De geselecteerde persoon zal
+// de rekening van het eten van iedereen moeten betalen.
+function whosPaying(){
+    let names = ["Claudia", "Mike", "Ben", "Danielle", "Freckle"]
+    let numberOfPeople = names.length;
+    let randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    let randomPerson = names[randomPersonPosition];
+
+    return randomPerson + " is going to buy lunch today!";
+}
+
+console.log(whosPaying());
