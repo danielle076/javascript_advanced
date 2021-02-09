@@ -1,8 +1,8 @@
-// 1. Gegeven: we hebben een array met e-mailaddressen van medewerkers. Voer de volgende acties uit:
+// 1. Gegeven: we hebben een array met e-mailaddressen van medewerkers. Voer de volgende acties uit.
 const emailadresses = ['n.eeken@novi.nl', 'n.stuivenberg@novi.nl', 'm.vandergeest@novi-education.nl', 'a.wiersma@novi.nl'];
 
 
-// 1a. Onze nieuwe medewerker Melissa moet worden toegevoegd aan de lijst met emailadressen. Haar email is: m.westerbroek@novi.nl
+// 1a. Onze nieuwe medewerker Melissa moet worden toegevoegd aan de lijst met e-mailadressen. Haar email is: m.westerbroek@novi.nl
 emailadresses.push('m.westerbroek@novi.nl');
 console.log(emailadresses);
 
@@ -43,7 +43,7 @@ console.log(emailadresses);
 // maar je weet niet op welke plek in de lijst dit e-mailadres staat. Schrijf een functie die drie parameters verwacht:
 // een array met e-mailadressen, het oude e-mailadres dat vervangen moet worden, en het nieuwe e-mailadres.
 // Deze functie achterhaalt het indexnummer van het oude e-mailadres en vervangt dit vervolgens voor het nieuwe adres.
-// TIP: schrijf 'm eerst zoals je hem zou toepassen op bovenstaande array en schrijf die code dan om naar een functie
+// TIP: schrijf 'm eerst zoals je hem zou toepassen op bovenstaande array en schrijf die code dan om naar een functie.
 function replaceEmail(emailList, wrongEmail, replacementEmail) {
     const index = emailList.indexOf(wrongEmail);
     // ons geval staat hier eigenlijk, emailadresses[2] = m.vandergeest@novi.nl
@@ -55,7 +55,7 @@ console.log(emailadresses);
 
 
 // 2. Schrijf een functie die de diameter van een cirkel verwacht als parameter en de omtrek van die cirkel berekent
-// en teruggeeft
+// en teruggeeft.
 // tip: PI * diameter
 // Uitkomst: 4 geeft 12.566370614359172
 // Uitkomst: 12 geeft 37.69911184307752
@@ -66,7 +66,7 @@ function perimeter(diameter) {
 console.log(perimeter(4));
 
 
-// 3. Schrijf bovenstaande functie nogmaals, maar zorg er nu voor dat de uitkomst wordt afgerond
+// 3. Schrijf bovenstaande functie nogmaals, maar zorg er nu voor dat de uitkomst wordt afgerond.
 // Uitkomst: 4 geeft 13
 // Uitkomst: 12 geeft 38
 function perimeterRounded(diameter) {
@@ -76,7 +76,7 @@ function perimeterRounded(diameter) {
 perimeterRounded(4);
 
 
-// 4. Schrijf een functie die het laatste karakter in een string teruggeeft
+// 4. Schrijf een functie die het laatste karakter in een string teruggeeft.
 // Uitkomst: "vermicelli" geeft "i"
 // Uitkomst: "kroepoek" geeft "k"
 // OPTIE 1 (geeft het karakter op dit indexnummer terug)
@@ -105,9 +105,9 @@ function split(saying) {
 console.log(split("Niet geschoten is altijd mis "));
 
 
-// 6. Maak een variabele "today" en sla daar een nieuw date-object in op
-// Print in de console (in nummers) in welke maand we nu zitten
-// Print in de console (in nummers) welk uur van de dag het is
+// 6. Maak een variabele "today" en sla daar een nieuw date-object in op.
+// Print in de console (in nummers) in welke maand we nu zitten.
+// Print in de console (in nummers) welk uur van de dag het is.
 const today = new Date();
 
 console.log(today.getMonth());
@@ -115,7 +115,7 @@ console.log(today.getHours());
 
 
 // 7. Schrijf een functie die twee strings als parameters verwacht en de langste naam teruggeeft.
-// Als de namen beide even lang zijn geeft hij de string "Beide namen zijn even lang" terug
+// Als de namen beide even lang zijn geeft hij de string "Beide namen zijn even lang" terug.
 // Uitkomst: "Nick", "Nova" geeft "Beide namen zijn even lang"
 // Uitkomst: "Mitchel", "Nick" geeft "Mitchel"
 function longestName(nameOne, nameTwo) {
@@ -149,6 +149,7 @@ let loveScore = Math.random() * 100;
 loveScore = Math.floor(loveScore) + 1;
 alert("Your love score is " + loveScore + "%");
 
+
 // 9. Maak een array met voornamen.
 // Schrijf een prompt die een gast vraagt naar zijn/haar naam. Wanneer ze deze intypen, controleer je hun naam met alle
 // namen die in de gastenlijst staan. Als de naam bestaat geef je een alert "Welcome!" en als de naam niet bestaat
@@ -162,6 +163,7 @@ if (guestList.includes(guestName)){
 } else {
     alert("Sorry, maybe next time.")
 }
+
 
 // 10. Schrijf een functie die een willekeurige naam selecteert uit een lijst met namen. De geselecteerde persoon zal
 // de rekening van het eten van iedereen moeten betalen.
