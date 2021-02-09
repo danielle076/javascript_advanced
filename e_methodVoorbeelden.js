@@ -137,3 +137,13 @@ function longestName(nameOne, nameTwo) {
 
 console.log(longestName("Mitchel", "Nick"));
 console.log(longestName("Nova", "Nick"));
+
+// 8. Schrijf twee prompts waarbij je vraagt naar de namen van twee mensen. Er wordt verder niets met deze namen gedaan.
+// Een willekeurig getal berekent een percentage (tussen de 1 en 100) en geeft deze via een alert als een love score aan
+// de gebruiker.
+prompt("what is your name?");
+prompt("what is their name?");
+
+let loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1;
+alert("Your love score is " + loveScore + "%");
