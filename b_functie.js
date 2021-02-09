@@ -3,7 +3,7 @@
 // Een functie wordt uitgevoerd wanneer "iets" haar aanroept (calls it).
 // Functie kun je herkennen door het woordje function, dat is een keyword van JavaScript.
 
-// ONDERDELEN VAN FUNCTION
+// FUNCTION SYNTAX
 // Keyword: function
 // Naam van de functie: myFunction
 // Parameter list: ()
@@ -51,7 +51,7 @@ console.log(x); // resultaat 12
 
 // MEERDERE WAARDEN RETOURNEREN
 // Een functie kan altijd maar één terugkeerwaarde hebben.
-// Als je twee waarden wilt teruggeven, dan gebruiken we één variabele waarin we meerdere waarden kunnen stoppen: een array.
+// Als je twee waarden wilt teruggeven, dan gebruiken we een variabele waarin we meerdere waarden kunnen stoppen: een array.
 
 function getAreaSizes(width, length, depth) {
     const area = width * length;
@@ -120,7 +120,7 @@ const emailText = greeting + "wil je lid worden?"
 // De waarde van "Hallo" + subject; kun je returnen.
 // Roep de functie greet5() + subject aan.
 // emailText2 gebruik je om je e-mail te sturen.
-// Check of e-mailtext2 klopt doe je met console.log.
+// Check of de e-mailtext2 klopt doe je met console.log.
 function greet5(subject){
     const greeting = "Hallo " + subject;
     return greeting;
