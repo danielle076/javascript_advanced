@@ -4,15 +4,15 @@
 
 // WAT IS JSON?
 // JSON staat voor JavaScript Object Notation.
-// JSON is een lichtgewicht formaat voor gegevensuitwisseling
-// JSON is taal onafhankelijk *
-// JSON is "zelf-beschrijvend" en gemakkelijk te begrijpen
-// * De JSON syntaxis is afgeleid van de JavaScript object notatie syntaxis, maar het JSON formaat is alleen tekst. Code
-// voor het lezen en genereren van JSON-gegevens kan in elke programmeertaal worden geschreven.
+// JSON is een lichtgewicht formaat voor gegevensuitwisseling.
+// JSON is "zelf-beschrijvend" en gemakkelijk te begrijpen.
+// JSON is door mensen leesbaar en beschrijfbaar.
+// JSON is taal onafhankelijk: hoewel het is afgeleid van een onderdeel van JavaScript, is het taal onafhankelijk. De
+// code voor het genereren en ontleden van JSON-gegevens kan dus in elke andere programmeertaal worden geschreven.
 
 // WAAROM JSON?
-// Het is heel handig dat we objecten en arrays hebben in JavaScript, maar deze datastructuren kunnen we niet over het
-// netwerk verzenden. Sterker nog: het enige wat we van de ene naar de andere computer kunnen sturen, is platte tekst.
+// Het is handig dat we objecten en arrays hebben in JavaScript, maar deze datastructuren kunnen we niet over het
+// netwerk verzenden. Sterker nog, het enige wat we van de ene naar de andere computer kunnen sturen, is platte tekst.
 // Daarom gebruiken we JSON om JavaScript-data van de ene computer naar de andere te krijgen.
 
 // HOE JSON?
