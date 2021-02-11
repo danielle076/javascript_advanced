@@ -1,27 +1,32 @@
+// import index.js
 const numbers = require("./index").numbers;
 const magic = require("./index").magic;
 
+// Een test doe je in drie stappen:
+// - Arrange: klaarzetten van de data
+// - Act: handelen, functie aanroepen die je wilt
+// - Assert: beweringen/verwachtingen
+
 test("numbers() function should return the subtract of 2 numbers", function(){
 
-    // ARRANGE (klaarzetten van de data)
+    // ARRANGE
     const num1 = 10;
     const num2 = 4;
 
-    // ACT (handelen, functie aanroepen die je wilt)
+    // ACT
     const subtract = numbers(num1, num2);
 
-    // ASSERT (beweringen/verwachtingen)
+    // ASSERT
     expect(subtract).toBe(6);
 })
 
 test("magic() adds two strings together", function(){
 
-    // ARRANGE (klaarzetten van de data)
+    // ARRANGE
     const outcomeMagic = magic("abra", "cadabra");
 
-    // ACT (handelen, functie aanroepen die je wilt)
+    // ACT
 
-
-    // ASSERT (beweringen/verwachtingen)
+    // ASSERT
     expect(outcomeMagic).toBe("abracadabra");
 })

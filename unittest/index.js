@@ -11,6 +11,7 @@ const outcomeMagic = magic("abra", "cadabra");
 
 console.log(outcomeMagic);
 
+// export index.test.js
 module.exports = {
     numbers: numbers,
     magic: magic
