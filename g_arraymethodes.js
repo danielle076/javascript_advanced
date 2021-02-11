@@ -1,7 +1,7 @@
 // ARRAY METHODES
 // * map()
 // * filter()
-// * filter()
+// * find()
 // * sort()
 
 // Bij deze vier methodes moet je altijd een callback functie meegeven. Een callback is een functie die wordt aangeroepen
@@ -25,9 +25,9 @@
 // entry in de array.
 
 // MAP() VOORBEELD #1
-var arr = [2, 5, 6, 3, 8, 9];
+const arr = [2, 5, 6, 3, 8, 9];
 
-var newArr = arr.map(function(val, index){
+const newArr = arr.map(function(val, index){
     return {key:index, value:val*val};
 })
 
@@ -36,11 +36,11 @@ console.log(newArr); // geeft [ { key: 0, value: 4 }, { key: 1, value: 25 }, { k
 // MAP() VOORBEELD #2
 const students = ["Danielle van den Akker", "Freckle Oreo", "Chantal van Toorn"];
 
-const prefixedStudents = students.map((student) => {
+const prefixedStudents = students.map(function(student) {
     return "Leerling: " + student;
 });
 
-console.log(prefixedStudents); // geeft ['Danielle van den Akker', 'Freckle Oreo', 'Chantal van Toorn']
+console.log(prefixedStudents); // geeft ['Leerling: Danielle van den Akker', 'Leerling: Freckle Oreo', 'Leerling: Chantal van Toorn' ]
 
 // FILTER() SYNTAX
 // array.filter(callback(element, index, arr), thisValue)
@@ -63,7 +63,7 @@ function isPositive(value) {
     return value > 0;
 }
 
-var filtered = [20, 88, -155, 0, 244].filter(isPositive);
+const filtered = [20, 88, -155, 0, 244].filter(isPositive);
 
 console.log(filtered); // geeft [ 20, 88, 244 ]
 
@@ -72,7 +72,7 @@ function isEven(value) {
     return value % 2 == 0;
 }
 
-var filtered2 = [11, 98, 31, 23, 944].filter(isEven);
+const filtered2 = [11, 98, 31, 23, 944].filter(isEven);
 
 console.log(filtered2); // heeft [ 98, 944 ]
 
@@ -92,22 +92,22 @@ console.log(filtered2); // heeft [ 98, 944 ]
 // find() geeft een enkele waarde terug, namelijk het eerste element dat voldoet aan de conditie die is gesteld.
 
 // FIND() VOORBEELD #1
-var array = [10, 20, 30, 40, 50];
+const array = [10, 20, 30, 40, 50];
 
-var found = array.find(function (element) {
+const found = array.find(function (element) {
     return element > 20;
 });
 
 console.log(found); // geeft 30
 
 // FIND() VOORBEELD #2
-var array2 = [2, 7, 8, 9];
+const array2 = [2, 7, 8, 9];
 
-var found2 = array2.find(function (element) {
+const search = array2.find(function (element) {
     return element > 4;
 });
 
-console.log(found2); // geeft 7
+console.log(search); // geeft 7
 
 // SORT() SYNTAX
 // arr.sort(compareFunction)
@@ -125,14 +125,14 @@ console.log(found2); // geeft 7
 // sort() geeft niets terug, maar veranderd de volgorde van de bestaande array op basis van de conditie die is gesteld.
 
 // SORT() VOORBEELD #1
-var arr = [2, 5, 8, 1, 4]
+const arr3 = [2, 5, 8, 1, 4]
 
-arr.sort();
+arr3.sort();
 
-console.log(arr); // geeft [ 1, 2, 4, 5, 8 ]
+console.log(arr3); // geeft [ 1, 2, 4, 5, 8 ]
 
 // SORT() VOORBEELD #2
-var arr2 = [2, 5, 8, 1, 4]
+const arr2 = [2, 5, 8, 1, 4]
 
 arr2.sort(function(a, b) {
     return a + 2 * b;
