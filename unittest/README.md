@@ -2,7 +2,7 @@
 Unit testen is een vorm van software testen waarbij individuele componenten van een software worden getest.<br/>
 Unit testen van software producten worden uitgevoerd tijdens de ontwikkeling van een applicatie. Een individuele component kan zowel een individuele functie als een procedure zijn. Unit testen worden meestal uitgevoerd door de ontwikkelaar.
 
-####Het doel van Unit testen is:
+<b>Het doel van Unit testen is:</b>
 - Het isoleren van een deel van de code
 - De juistheid van de code te verifiëren
 - Elke functie en procedure te testen
@@ -10,7 +10,7 @@ Unit testen van software producten worden uitgevoerd tijdens de ontwikkeling van
 - Ontwikkelaars helpen de code te begrijpen en hen in staat te stellen snel veranderingen aan te brengen
 - Helpen bij hergebruik van code
 
-####Voordelen van Unit Testen:
+<b>>Voordelen van Unit Testen:</b>
 - Unit testen stelt ontwikkelaars in staat om te leren welke functionaliteit door een unit wordt geleverd en hoe deze te gebruiken om een basis begrip van de unit te krijgen
 - Unit testen stelt de programmeur in staat om code te verfijnen en ervoor te zorgen dat de module goed werkt
 - Unit testen maakt het mogelijk om delen van het project te testen zonder te wachten tot anderen klaar zijn
