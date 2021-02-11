@@ -1,5 +1,5 @@
 // JAVASCRIPT JSON
-// JSON is een formaat voor het opslaan en transporteren van gegevens.
+// JSON is een formaat voor het structureren van gegevens.
 // JSON wordt vaak gebruikt wanneer gegevens van een server naar een webpagina worden gestuurd.
 
 // WAT IS JSON?
