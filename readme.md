@@ -9,6 +9,7 @@ Dit project bevat de volgende bestanden:
 * `f_json.js`
 * `f_arraymethodes.js` + `f_arraymethodesVoorbeelden.js`
 * `h_dom.js` + `h_dom.html`
+* `i_api.js` +  `api.html`
 * `unittest`
 
 
