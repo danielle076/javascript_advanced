@@ -85,3 +85,32 @@ deleteButton.addEventListener("click", function() {
         email.remove();
     });
 });
+
+// CREATE NEW EMAIL STAPPENPLAN
+// - [x] Input veld waar iemand iets in kan typen (h_dom.html)
+// - [x] Knopje met create email (h_dom.html)
+// - [x] Wanneer iemand op het knopje klikt: (getElementById, addEventListener)
+//   - [x] Input veld selecteren (getElementById)
+//   - [x] Text uit het inputveld halen (.value)
+//   - [x] Nieuw element maken (createElement)
+//   - [x] De text van de gebruiker aan het element toevoegen (.textContent)
+//   - [x] Het lijstje selecteren (getElementById)
+//   - [x] Het element aan het lijstje "plakken" (appendChild)
+
+const createButton = document.getElementById("createButton");
+console.log("CREATE BUTTON:", createButton); // geeft CREATE BUTTON: <button id="createButton">Create email</button>
+
+createButton.addEventListener("click", function() {
+    console.log("CLICKED?"); // klik op "create email" geeft CLICKED?
+    const emailInput = document.getElementById("emailInput");
+    console.log(emailInput.value, "VALUE OF INPUT?"); // klik op "create email" geeft VALUE OF INPUT?
+
+    const newEmail = document.createElement("li");
+    newEmail.setAttribute("class", "email new");
+    newEmail.textContent = emailInput.value;
+    newEmail.style.backgroundColor = "mediumpurple"; // vul iets in, klik op "create email" maakt de nieuwe waarde paars
+
+    const inbox = document.getElementById("inbox");
+    console.log("Inbox:", inbox); // geeft Inbox: <ul id="inbox">…</ul>
+    inbox.appendChild(newEmail);
+});
