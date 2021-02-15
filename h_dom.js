@@ -20,21 +20,18 @@
 // - document.getElementById -> selecteer 1 enkel element op basis van id.
 // - textContent -> kan je veranderen met JavaScript.
 // - document.getElementsByClassName -> selecteer meerdere elementen op basis van class.
-
-
-//  - document.addEventListener ->
-//      - Laat de browser luisteren naar een event (vaak gebruikers interactie)
-//      - Je kan een functie meegeven die wordt uitgevoerd zodra de gebruiker iets doet
-//  - document.createElement -> maak element (niet te zien)
-//  - document.appendChild -> plak element op de pagina (nu wel te zien)
-//  - document.setAttribute -> een attribuut toevoegen (class, id, type)
-//  - document.removeAttribute
-//
+// - document.addEventListener ->
+//   - Laat de browser luisteren naar een event (vaak gebruikers interactie)
+//   - Je kan een functie meegeven die wordt uitgevoerd zodra de gebruiker iets doet
+// - document.createElement -> maak element (niet te zien)
+// - document.appendChild -> plak element op de pagina (nu wel te zien)
+// - document.setAttribute -> een attribuut toevoegen (class, id, type)
+// - document.removeAttribute
 // * Bonus
-//  - element.remove() -> haal een element weg
-//  - kleurtjes toevoegen / veranderen
-//    - class toevoegen -> in css class definiëren
-//    - direct met JS -> element.style.backgroundColor = "orange"
+// - element.remove() -> haalt een element weg
+// - kleurtjes toevoegen / veranderen
+//   - class toevoegen -> in css class definiëren
+//   - direct met JS -> element.style.backgroundColor = "orange"
 
 // h_dom.html: "<h1 id="bigHeader">Freckle's inbox</h1>".
 // Met JavaScript kun je id "bigHeader" met getElementById aanroepen.
@@ -67,3 +64,24 @@ for (const email of emails) {
     email.textContent = email.textContent + " not Opened Yet";
     // Hiermee kunnen we gebruikers interactie maken dat de gebruiker erop kan gaan klikken
 }
+
+// DELETE BUTTON STAPPENPLAN
+// - [x] Selecteer knopje in HTML en JS "deleteButton"
+// - [x] Voeg een event listener toe, die luistert naar click
+// - [x] Wanneer er geclickt wordt:
+// - [x] 1. Selecteer alle emails
+// - [x] 2. Verwijder alle emails
+
+// h_dom.html: "<button id="deleteButton">DELETE EMAILS</button>"
+const deleteButton = document.getElementById("deleteButton");
+console.log("DELETE BUTTON:", deleteButton); // geeft DELETE BUTTON: <button id="deleteButton">DELETE EMAILS</button>
+
+deleteButton.addEventListener("click", function() {
+    console.log("I GOT CLICKED!"); // geeft I GOT CLICKED
+    const emails = document.getElementsByClassName("email");
+    const emailArray = Array.from(emails);
+
+    emailArray.forEach(function(email) { // De forEach() methode voert een gegeven functie eenmaal uit voor elk array-element.
+        email.remove();
+    });
+});
