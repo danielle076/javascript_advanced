@@ -1,15 +1,27 @@
-// JAVASCRIPT IN DE FRONTEND
+// JAVASCRIPT IN DE FRONTEND: HET HTML DOM
 
 // WAT IS DOM
-//  - Familieboom van de webpagina
+// DOM staat voor Document Object Model.
+// Wanneer een webpagina wordt geladen, maakt de browser een Document Object Model van de pagina.
+// Het definieert de logische structuur van documenten en de manier waarop een document wordt geraadpleegd en gemanipuleerd.
+// Het HTML DOM-model is opgebouwd als een boom van Objecten: https://www.w3schools.com/js/pic_htmltree.gif.
 
 // WAT KAN JE ERMEE
-//  - Interactieve pagina maken (gebruikers klikken op dingen)
-//  - Dynamische pagina's maken (andere content weergeven afhankelijk van de gebruiker)
+// Met het objectmodel kan JavaScript HTML dynamisch maken.
+// * JavaScript kan alle HTML-elementen in de pagina veranderen.
+// * JavaScript kan alle HTML-attributen op de pagina wijzigen.
+// * JavaScript kan alle CSS-stijlen op de pagina wijzigen.
+// * JavaScript kan bestaande HTML-elementen en -attributen verwijderen.
+// * JavaScript kan nieuwe HTML-elementen en -attributen toevoegen.
+// * JavaScript kan reageren op alle bestaande HTML-gebeurtenissen in de pagina.
+// * JavaScript kan nieuwe HTML-gebeurtenissen in de pagina maken.
 
-// WELKE METHODES HEEFT DE DOM (de belangrijskte)
-//  - document.getElementById -> selecteer 1 enkel element op basis van id
-//  - document.getElementsByClassName -> selecteer meerdere elementen op basis van class
+// DE BELANGRIJKSTE METHODES VAN DE DOM
+// - document.getElementById -> selecteer 1 enkel element op basis van id.
+// - textContent -> kan je veranderen met JavaScript.
+// - document.getElementsByClassName -> selecteer meerdere elementen op basis van class.
+
+
 //  - document.addEventListener ->
 //      - Laat de browser luisteren naar een event (vaak gebruikers interactie)
 //      - Je kan een functie meegeven die wordt uitgevoerd zodra de gebruiker iets doet
@@ -17,40 +29,41 @@
 //  - document.appendChild -> plak element op de pagina (nu wel te zien)
 //  - document.setAttribute -> een attribuut toevoegen (class, id, type)
 //  - document.removeAttribute
-// * Properties van elementen
-//  - textContent -> kan je veranderen met javascript
+//
 // * Bonus
 //  - element.remove() -> haal een element weg
 //  - kleurtjes toevoegen / veranderen
-//    - class toevoegen -> in css class definieren
+//    - class toevoegen -> in css class definiëren
 //    - direct met JS -> element.style.backgroundColor = "orange"
 
-// in HTML heb je <h1> id "bigHeader" gegeven en deze kun je aanroepen met JavaScript
+// h_dom.html: "<h1 id="bigHeader">Freckle's inbox</h1>".
+// Met JavaScript kun je id "bigHeader" met getElementById aanroepen.
 const header = document.getElementById("bigHeader");
 
-// deze twee logjes staan in de browser bij inspecteren
-console.log("HAIIII???");
-console.log("header", header);
+// Deze twee logjes staan in de browser bij inspecteren.
+console.log("HAIIII???"); // geeft HAIIII???
+console.log("HEADER:", header); // geeft HEADER: <h1 id="bigHeader">Freckle's inbox</h1>
 
 const user = "Danielle";
-// textcontent hiermee kun je de h1 van HTML aanpassen en dynamisch maken
-header.textContent = `${user}'s Inbox 🔮 🦠`;
+// Met textcontent kun je de <h1> van h_dom.html aanpassen en dynamisch maken.
+header.textContent = `${user}'s Inbox 🔮 🦠`; // geeft HEADER: <h1 id="bigHeader">Danielle's Inbox 🔮 🦠</h1>
 
-// document.getElementById en header.textContent zijn objecten
+// Objecten: document.getElementById en header.textContent
 
-// bij getElementsByClassName zet je tussen haakjes de class "email" (staat in h_dom.html)
-// getElementsByClassName geeft een HTMLCollection terug
+// h_dom.html: "<li class="email">EMAIL 1</li>"
+// Bij getElementsByClassName() zet je tussen haakjes de class uit h_dom.html: "email".
+// getElementsByClassName() geeft een HTMLCollection terug.
+// HTMLCollection lijkt op een array, maar je kan bijvoorbeeld geen .map() van maken, dus weet je dat het geen array is.
 const emails = document.getElementsByClassName("email")
 console.log(emails); // HTMLCollection(5) [li.email, li.email, li.email, li.email, li.email]
-// HTMLCollection lijkt op een array. Je kan bijvoorbeeld geen .map() van maken, dus weet je dat het geen array is
 
-// array maken van een HTMLCollection
+// Op de volgende manier kun je een array maken van een HTMLCollection.
 const emailArray = Array.from(emails);
 
 for (const email of emails) {
-// je logt de textContent van alle e-mails
-  console.log(email.textContent);
-  // we kunnen iets veranderen aan de e-mails
-  email.textContent = email.textContent + " not Opened Yet";
-  // hierop gaan we gebruikers interactie maken dat de gebruiker erop kunnen gaan klikken
+    // Je logt de textContent van alle e-mails
+    console.log(email.textContent);
+    // We kunnen iets veranderen aan de e-mails
+    email.textContent = email.textContent + " not Opened Yet";
+    // Hiermee kunnen we gebruikers interactie maken dat de gebruiker erop kan gaan klikken
 }
