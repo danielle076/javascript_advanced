@@ -1,6 +1,6 @@
-// import index.js
-const numbers = require("./index").numbers;
-const magic = require("./index").magic;
+// import j_unit.js
+const numbers = require("./j_unit").numbers;
+const magic = require("./j_unit").magic;
 
 // Een test doe je in drie stappen:
 // - Arrange: klaarzetten van de data

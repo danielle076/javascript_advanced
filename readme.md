@@ -10,7 +10,7 @@ Dit project bevat de volgende bestanden:
 * `f_arraymethodes.js` + `f_arraymethodesVoorbeelden.js`
 * `h_dom.js` + `h_dom.html`
 * `i_api.js` +  `api.html`
-* `unittest`
+* `j_unit.js` + `j_unit.test.js` + `j_unitreadme.md`
 
 
 
