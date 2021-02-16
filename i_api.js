@@ -18,8 +18,8 @@
 //  - [] Lijst maken met een id (HTML)
 //  - [] Lijst selecteren (via loop)
 //  - [] Voor elke element in de array (via een loop)
-//      - [] li aanmaken
-//      - [] textContent toevoegen
+//    - [] li aanmaken
+//    - [] textContent toevoegen
 // - [] Appenden
 
 // log1 in browser: hi
