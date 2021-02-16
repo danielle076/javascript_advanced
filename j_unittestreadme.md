@@ -31,12 +31,12 @@ Wanneer je test en functies hebt geschreven kun je deze als volgt testen in term
 - met ctrl + c kun je de test stoppen
 
 Wanneer je er voor kiest om de functies in een andere file te zetten moet je ze kunnen linken met je test file (anders kun je niks testen). Dit doe je met import en export.
-* j_unit.js ga je exporteren
-* j_unit.test.js ga je importeren
+* j_unittest.js ga je exporteren
+* j_unittest.test.js ga je importeren
 
-Een voorbeeld (zie ook de files j_unit.js en j_unit.test.js)<br/>
+Een voorbeeld (zie ook de files j_unittest.js en j_unittest.test.js)<br/>
 
-j_unit.js ga je exporteren
+j_unittest.js ga je exporteren
 ```bash
 module.exports = {
 add: add,
@@ -44,7 +44,7 @@ findByName: findByName
 };
 ```
 
-j_unit.test.js ga je importeren
+j_unittest.test.js ga je importeren
 ```bash
 const add = require("./index").add;
 const findByName = require("./index").findByName;

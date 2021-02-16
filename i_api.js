@@ -6,7 +6,7 @@
 
 // CHECKLIST FILES
 // - [] JS & HTML files maken (api.js en api.html)
-// - [] JavaScript script file linken in HTML (<script src="j_unit.js"></script>)
+// - [] JavaScript script file linken in HTML (<script src="j_unittest.js"></script>)
 // - [] Axios script linken in HTML (<script src="./node_modules/axios/dist/axios.min.js"></script>)
 
 // CHECKLIST VOORBEELD API
