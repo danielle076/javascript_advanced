@@ -19,7 +19,7 @@ Unit testen van software producten worden uitgevoerd tijdens de ontwikkeling van
 ## Unit test (met jest)
 Om jest te gaan gebruiken voor je unit testen, moet je hem eerst installeren. Dit doe je voor elk project.
 
-Ga naar WebStorm of een andere JavaScript IDE en doe de volgende stappen:
+Ga naar WebStorm of een andere JavaScript IDE en voer de volgende stappen uit:
 1. ga in je map/project staan die je wilt gaan unit testen 
 2. ga naar je terminal en type "npm init" en package.json wordt aangemaakt
 3. type in je terminal "npm install -D jest" en jest wordt geïnstalleerd

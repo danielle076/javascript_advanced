@@ -1,4 +1,4 @@
-// import j_unittest.js
+// Import j_unittest.js
 const numbers = require("./j_unittest").numbers;
 const magic = require("./j_unittest").magic;
 
