@@ -33,6 +33,19 @@
 //   - class toevoegen -> in css class definiëren
 //   - direct met JS -> element.style.backgroundColor = "orange"
 
+// INCORPORATE JAVASCRIPT
+// Voordat we JavaScript kunnen gebruiken op onze website moeten we het JavaScript file linken met de HTML file.
+// We maken gebruik van een externe file en we specificeren de locatie van dat bestand in het attribuut src.
+// <script src="h_dom.js"></script>
+// De positie in het HTML document waar we de script tag plaatsen is heel belangrijk.
+// De beste methode is om het script aan het eind te plaatsen, net voor de afsluitende body tag. Reden hiervoor is dat
+// JavaScript code invloed heeft op je HTML en als de JavaScript bovenaan de top staat, dan ziet hij de HTML code nog
+// niet want die staat pas in de body, waardoor je een fout krijgt omdat JavaScript de code niet heeft kunnen lezen.
+// (bij css is dit andersom)
+// Bijkomend voordeel hiervan is als je veel Javascript code hebt, wat meestal meer tijd kost om uit te voeren, dan zal
+// tenminste alle inhoud van je website geladen zijn voor de gebruikers om te zien, en de delen die ze niet kunnen
+// waarnemen, zoals de script code, gebeurt daarna zodat het lijkt alsof de website sneller laadt.
+
 // h_dom.html: "<h1 id="bigHeader">Freckle's inbox</h1>".
 // Met JavaScript kun je id "bigHeader" met getElementById aanroepen.
 const header = document.getElementById("bigHeader");
