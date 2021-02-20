@@ -11,7 +11,7 @@ Dit project bevat de volgende bestanden:
 * `h_dom.js` + `h_dom.html`
 * `i_api.js` +  `i_api.html`
 * `j_unittest.js` + `j_unittest.test.js` + `j_unittestreadme.md`
-* `k_oop.js`
+* `k_oop.js` + `k_oopVoorbeelden.js`
 
 
 
