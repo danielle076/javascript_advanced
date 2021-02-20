@@ -1,4 +1,13 @@
-// PROGRAMMEREN MET CLASSES
+// OBJECT ORIENTED PROGRAMMING (OOP)
+// Object-georiënteerd programmeren is een manier om code te schrijven die het mogelijk maakt verschillende objecten te
+// creëren vanuit een algemeen object. Het algemene object wordt een blauwdruk genoemd, terwijl de gecreëerde objecten
+// instanties worden genoemd.
+// Elke instantie heeft eigenschappen die niet gedeeld worden met andere instanties. Bijvoorbeeld, als je een user
+// blauwdruk hebt, kun je user instanties maken met verschillende namen.
+// Het tweede aspect van Object-georiënteerd Programmeren gaat over het structureren van code wanneer je meerdere
+// niveaus van blauwdrukken hebt. Dit wordt inheritance of subclassing genoemd.
+// Het derde aspect van Object-georiënteerd programmeren gaat over inkapseling (encapsulation ), waarbij je bepaalde
+// informatie in het object verbergt, zodat ze niet toegankelijk is.
 
 // VOORBEELD
 // We hebben twee objecten: user1 en user2. Deze hebben 1 methode “login” en deze heeft 1 parameter inputPassword. De
@@ -36,7 +45,7 @@ const user2 = {
 user1.login("1234"); // Welcome Danielle, your logged in!
 user2.login("1234"); // Wrong password, access denied!
 
-// Het is niet handig in programmeren om dingen te herhalen.
+// In programmeren is het niet handig om dingen te herhalen.
 
 // CLASS & INSTANTIE
 // Een class is een soort blauwdruk voor een object.
@@ -45,21 +54,21 @@ user2.login("1234"); // Wrong password, access denied!
 // blauwdruk worden meerdere users gemaakt.
 class User{}
 
-// Wanneer je met een blauwdruk een user aanmaakt noem je dat een instantie maken.
+// Wanneer je met een blauwdruk een user aanmaakt noem je dat een instantie.
 new User()
-console.log(new User()); // User {} >> je krijgt een user object dat op dit moment leeg is
+console.log(new User()); // je krijgt een user object dat op dit moment leeg is: User {}
 
 // Je kan meerdere users maken.
 console.log("1", new User());
 console.log("2", new User());
 console.log("3", new User());
 
-// We hebben nu 1 user class en 3 user instanties gemaakt.
+// We hebben nu 1 User class en 3 User instanties gemaakt.
 // Hoe kan je zien dat er een instantie wordt gemaakt? Omdat er “new” voor de classnaam staat.
 
 // CONSTRUCTOR
 // We willen bereiken dat de user objecten “userName, email, password en loggedIn” een waarde krijgen in de class. Je
-// kan dit doen door in de class een speciale functie te maken, genaamd constructor. Die constructor wordt aangeroepen
+// kan dit doen door in de class een speciale functie te maken, genaamd constructor. De constructor wordt aangeroepen
 // wanneer je de gebruiker instantieert.
 class User2{
     constructor() {
@@ -79,12 +88,10 @@ console.log("3", new User2());
 // CONSTRUCTOR AANROEPEN
 // 3 User2 {}
 
-// We hebben gezegd “new user” en dan wordt de constructor aangeroepen. Dus als je een instantie maakt wordt de
-// constructor aangeroepen.
+// We zeggen “new user” en dan wordt de constructor aangeroepen. Dus als je een instantie maakt wordt de constructor aangeroepen.
 
 // Volgende stap is de key values in de constructor zetten. Je kan naar een object verwijzen met het this keyword.
-// Wanneer je nu je constructor aanroept krijg je het volgende.
-
+// Wanneer je nu de constructor aanroept krijg je het volgende.
 class User3{
     constructor() {
         console.log("CONSTRUCTOR AANROEPEN", this);
@@ -107,7 +114,6 @@ console.log("3", new User3());
 // Je kan de constructor een waarde geven door this.userName, maar de constructor moet ook een parameter krijgen zodat
 // dingen ingegeven kunnen worden zoals “Freckle” of “Danielle”. Parameter wordt “userName”.
 // this.userName wordt de userName die we krijgen wanneer het object wordt geïnstantieerd: this userName = username;
-
 class User4{
     constructor(userName) {
         console.log("CONSTRUCTOR AANROEPEN", this);
@@ -127,8 +133,7 @@ console.log("3", new User4());
 // CONSTRUCTOR AANROEPEN User4 {}
 // 3 User4 { userName: undefined }
 
-// Dit is undefined omdat op het moment dat we de nieuwe users aanmaken geen argument geven.
-
+// User4 is undefined omdat op het moment dat we de nieuwe users aanmaken geen argument geven.
 class User5{
     constructor(userName) {
         console.log("CONSTRUCTOR AANROEPEN", this);
@@ -147,8 +152,7 @@ console.log("2", new User5("Freckle"));
 
 // We hebben de new userName opgeslagen als this.userName
 
-// Dit doen we ook voor email. this.email, parameter en argument en voor voor password. this.password, parameter en argument
-
+// Parameters en argumenten maken voor email (this.email, parameter en argument) en password (this.password, parameter en argument).
 class User6{
     constructor(userName, email, password) {
         this.userName = userName;
@@ -161,11 +165,10 @@ console.log("1", new User6("Danielle", "intoyou@gmail.com", "1234"));
 console.log("2", new User6("Freckle", "freckle@gmail.com", "abcd"));
 
 // Geeft:
-// 1 User7 { userName: 'Danielle', email: 'intoyou@gmail.com', password: '1234' }
-// 2 User7 { userName: 'Freckle', email: 'freckle@gmail.com', password: 'abcd' }
+// 1 User6 { userName: 'Danielle', email: 'intoyou@gmail.com', password: '1234' }
+// 2 User6 { userName: 'Freckle', email: 'freckle@gmail.com', password: 'abcd' }
 
-// Sommige properties kun je ook meegeven als beginwaarde. Dus als de gebruiker wordt aangemaakt ben je nog niet meteen ingelogd.
-
+// Sommige properties kun je meegeven als beginwaarde: this.loggedIn = false (als de gebruiker wordt aangemaakt ben je nog niet meteen ingelogd).
 class User7{
     constructor(userName, email, password) {
         this.userName = userName;
@@ -179,21 +182,20 @@ console.log("1", new User7("Danielle", "intoyou@gmail.com", "1234"));
 console.log("2", new User7("Freckle", "freckle@gmail.com", "abcd"));
 
 // Geeft:
-// 1 User8 {
+// 1 User7 {
 //   userName: 'Danielle',
 //   email: 'intoyou@gmail.com',
 //   password: '1234',
 //   loggedIn: false
 // }
-// 2 User8 {
+// 2 User7 {
 //   userName: 'Freckle',
 //   email: 'freckle@gmail.com',
 //   password: 'abcd',
 //   loggedIn: false
 // }
 
-// We willen de logica van de methode “inputPassword” ook delen, dit kun je makkelijk doen door de methode in de class te zetten.
-
+// De logica van de methode “inputPassword” kun je in de class zetten.
 class User8{
     constructor(userName, email, password) {
         this.userName = userName;
@@ -213,10 +215,9 @@ class User8{
 
 console.log("1", new User8("Danielle", "intoyou@gmail.com", "1234"));
 console.log("2", new User8("Freckle", "freckle@gmail.com", "abcd"));
+// Wanneer je logged zie je niet de methode. Je ziet alleen de keys en de values.
 
-// Wanneer je het logged, dan zie je niet die methode. Je ziet alleen de keys en de values.
-
-// We gaan kijken of we hetzelfde kunnen laten werken als in het begin.
+// Maak variabelen aan en controleer het wachtwoord.
 const danielle = new User8("Danielle", "intoyou@gmail.com", "1234");
 const freckle = new User8("Freckle", "freckle@gmail.com", "abcd");
 
