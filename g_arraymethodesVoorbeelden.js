@@ -35,14 +35,15 @@ console.log("BIRTHYEARS:", birthYears);
 
 // 3. Maak een array met daarin alle volledige namen van de uitvinders (voor- en achternaam als één string).
 // Uitkomst: [ 'Albert Einstein', 'Isaac Newton', 'Galileo Galilei', 'Marie Curie', 'Johannes Kepler', 'Nicolaus Copernicus', 'Max Planck', 'Katherine Blodgett', 'Ada Lovelace', 'Sarah E. Goode', 'Lise Meitner', 'Thomas Edison']
-const fullNames = inventors.map((inventor) => {
+const fullNames = inventors.map(function(inventor) {
   return inventor.first + " " + inventor.last;
 })
 
-console.log(fullNames);
+console.log("FULLNAMES:", fullNames);
 
 // KORTERE VERSIE
-// const fullNames = inventors.map(inventor => inventor.first + ' ' + inventor.last);
+const fullNames2 = inventors.map(inventor => inventor.first + ' ' + inventor.last);
+console.log("FULLNAMES2:", fullNames2);
 
 
 // 4. Sorteer de uitvinders op geboortejaar, oplopend van oudste naar jongste uitvinder.
@@ -61,9 +62,28 @@ console.log(fullNames);
 //   { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
 //   { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 }
 // ]
-inventors.sort((a, b) => a.year - b.year);
+const sorted = inventors.sort(function (inventorA, inventorB) {
+  if(inventorA.year > inventorB.year){
+    return 1;
+  }
 
-console.log(inventors);
+  if(inventorA.year < inventorB.year){
+    return -1;
+  }
+
+  if(inventorA.year === inventorB.year){
+    return 0;
+  }
+});
+
+console.log("SORTED:", sorted);
+
+// KORTERE VERSIE
+const sorted2 = inventors.sort(function (inventorA, inventorB) {
+  return inventorA.year - inventorB.year;
+});
+
+console.log("SORTED2:", sorted2);
 
 
 // 5. Sorteer de uitvinders op hoeveel jaren ze geleefd hebben, van langste leven naar kortste leven.
@@ -82,16 +102,13 @@ console.log(inventors);
 // { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
 // { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 }
 // ]
-inventors.sort((a, b) => {
+inventors.sort(function (a, b) {
   const yearsLivedA = a.passed - a.year;
   const yearsLivedB = b.passed - b.year;
   return yearsLivedB - yearsLivedA;
 })
 
-console.log(inventors);
-
-// KORTERE VERSIE
-// inventors.sort((a, b) => (a.passed - a.year) - (b.passed - b.year));
+console.log("SORTED LIFE:", inventors);
 
 
 // 6. Vind de gegevens over de uitvinder wiens achternaam 'Edison' is.
