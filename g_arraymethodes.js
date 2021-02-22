@@ -1,4 +1,7 @@
 // ARRAY METHODES
+// Om data op een handige manier te groeperen kom je vaak objecten in arrays tegenkomen, die op hun beurt waarschijnlijk
+// ook weer objecten of arrays bevatten. Het geeft ons de mogelijkheid om onze informatie op een logische manier op te slaan.
+// Om deze data te kunnen beheren, manipuleren en versturen heb je verschillende technieken.
 // * map()
 // * filter()
 // * find()
@@ -7,17 +10,6 @@
 // Bij deze vier methodes moet je altijd een callback functie meegeven. Een callback is een functie die wordt aangeroepen
 // door een andere functie, waarbij deze als parameter meegegeven wordt. In de callback beschrijven we, net als bij
 // een for-loop, wat voor acties we willen uitvoeren tijdens elke loop.
-
-// MAP() SYNTAX
-// array.map(function(currentValue, index, arr), thisValue)
-// Parameters: deze methode accepteert twee parameters (function en thisValue)
-// * function(currentValue, index, arr): Dit is een verplichte parameter en deze wordt op elk element van de array
-// uitgevoerd. Het bevat drie parameters:
-//   1. currentValue: een verplichte parameter en het bevat de waarde van het huidige element.
-//   2. index: een optionele parameter en het bevat de index van het huidige element.
-//   3. arr: een optionele parameter en bevat de array.
-// * thisValue: Dit is een optionele parameter en bevat de waarde van het element dat aan de functie wordt doorgegeven.
-// Return value: het geeft een nieuwe array terug en elementen van arrays zijn het resultaat van de callback functie.
 
 // BESCHRIJVING MAP()
 // map() geeft een nieuwe array terug waarin de waardes van de oude array, plus de gemaakte aanvullingen staan. De
@@ -42,18 +34,6 @@ const prefixedStudents = students.map(function(student) {
 
 console.log(prefixedStudents); // geeft ['Leerling: Danielle van den Akker', 'Leerling: Freckle Oreo', 'Leerling: Chantal van Toorn' ]
 
-// FILTER() SYNTAX
-// array.filter(callback(element, index, arr), thisValue)
-// Parameters: deze methode accepteert vijf parameters (callback, element, index, arr en thisValue)
-//   1. callback: parameter bevat de functie die moet worden aangeroepen voor elk element van de array.
-//   2. element: parameter bevat de waarde van de elementen die momenteel verwerkt worden.
-//   3. index: parameter is optioneel, het bevat de index van het currentValue element in de array beginnend bij 0.
-//   4. arr: parameter is optioneel, het bevat de volledige array waarop Array.every wordt aangeroepen.
-//   5. thisValue: parameter is optioneel, het bevat de context die moet worden doorgegeven als deze moet worden gebruikt
-//   tijdens het uitvoeren van de callback functie. Als de context wordt doorgegeven, zal deze bij elke aanroep van de
-//   callback-functie zo worden gebruikt, anders wordt ongedefinieerd als standaard gebruikt.
-// Return value: Deze methode retourneert een nieuwe array bestaande uit alleen die elementen die voldeden aan de voorwaarde van de arg_functie.
-
 // BESCHRIJVING FILTER()
 // filter() geeft een nieuwe array terug met alle waardes die voldoen aan de conditie die is gesteld. De originele
 // array wordt niet aangepast.
@@ -76,18 +56,6 @@ const filtered2 = [11, 98, 31, 23, 944].filter(isEven);
 
 console.log(filtered2); // heeft [ 98, 944 ]
 
-// FIND() SYNTAX
-// array.find(function(currentValue, index, arr),thisValue)
-// Parameters: deze methode accepteert vijf parameters (functie, currentValue, index, arr and thisValue)
-//   1. functie: de functie van de array die op elk element werkt.
-//   2. currentValue: parameter bevat het huidige element.
-//   3. index: optionele parameter die de index van het huidige element bevat.
-//   4. arr: optionele parameter die het array object bevat waartoe het huidige element behoort.
-//   5. thisValue: parameter is optioneel, indien een waarde wordt doorgegeven aan de functie om gebruikt te worden als
-//   zijn "this" waarde anders zal de waarde "undefined" doorgegeven worden als zijn "this" waarde.
-// Return value: deze geeft de waarde van het array-element terug, als een van de elementen in de array die aan de
-// voorwaarde voldoen, anders geeft hij ongedefinieerd terug.
-
 // BESCHRIJVING FIND()
 // find() geeft een enkele waarde terug, namelijk het eerste element dat voldoet aan de conditie die is gesteld.
 
@@ -108,18 +76,6 @@ const search = array2.find(function (element) {
 });
 
 console.log(search); // geeft 7
-
-// SORT() SYNTAX
-// arr.sort(compareFunction)
-// Parameters: deze methode accepteert één parameter
-// compareFunction: Deze parameter wordt gebruikt om de elementen te sorteren volgens de verschillende attributen en in de verschillende volgorde.
-//   - compareFunction(a,b) < 0
-//   Dan komt a voor b in het antwoord.
-//   - compareFunction(a,b) > 0
-//   Dan komt b voor a in het antwoord.
-//   - compareFunction(a,b) = 0
-//   Dan blijft de volgorde van a en b ongewijzigd.
-// Return value: Deze methode retourneert de referentie van de gesorteerde oorspronkelijke array.
 
 // BESCHRIJVING SORT()
 // sort() geeft niets terug, maar veranderd de volgorde van de bestaande array op basis van de conditie die is gesteld.
