@@ -17,39 +17,39 @@
 // - [] Data weergeven in de DOM (response.data.prizes moet op de website komen)
 //  - [] Lijst maken met een id (HTML)
 //  - [] Lijst selecteren (via loop)
-//  - [] Voor elke element in de array (via een loop)
+//  - [] Voor elk element in de array (via een loop)
 //    - [] li aanmaken
 //    - [] textContent toevoegen
 // - [] Appenden
 
-// log1 in browser: hi
+// Log1 in browser: hi
 console.log("Hi")
 
-// log2 in browser: ƒ (){for(var n=new Array(arguments.length),r=0;r<n.length;r++)n[r]=arguments[r];return e.apply(t,n)}
+// Log2 in browser: ƒ (){for(var n=new Array(arguments.length),r=0;r<n.length;r++)n[r]=arguments[r];return e.apply(t,n)}
 console.log(axios);
 
 // async functie maken en aanroepen
 async function displayPrizes(){
-    // log3 in browser: Hello
+    // Log3 in browser: Hello
     console.log("Hello")
     const response = await axios.get("https://ignoble-api.herokuapp.com/prizes?year=2020");
 
-    // log4 in browser: je krijgt het object met config, data, headers, request
+    // Log4 in browser: je krijgt het object met config, data, headers, request
     console.log("RESPONSE:", response);
-    // log5 in browser: je krijgt een array van de data prizes
+    // Log5 in browser: je krijgt een array van de data prizes
     console.log("RESPONSE:", response.data.prizes);
 
-    // lijst "prize-list" selecteren
+    // Lijst "prize-list" selecteren
     const prizeList = document.getElementById("prize-list");
-    // log6 in browser: lijst in console
+    // Log6 in browser: lijst in console
     console.log(prizeList);
 
-    // voor elke element in de array (via loop)
+    // Voor elk element in de array (via loop)
     for (const prize of response.data.prizes) {
         // log7 in browser: losse elementen prize lijst in console
         console.log("PRIZE:", prize);
 
-        // een li aanmaken en textContent (year en description)
+        // Een li aanmaken en textContent (year en description)
         const listItem = document.createElement("li");
         listItem.textContent = `${prize.year} - ${prize.type}: ${prize.description}`;
         // log8 in browser: <li> + jaar en beschrijving
@@ -60,5 +60,5 @@ async function displayPrizes(){
     }
 }
 
-// aanroepen
+// Aanroepen
 displayPrizes();
