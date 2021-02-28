@@ -12,4 +12,4 @@ Dit project bevat de volgende bestanden:
 * `i_api.js` +  `i_api.html`
 * `j_unittest.js` + `j_unittest.test.js` + `j_unittestreadme.md`
 * `k_oop.js` + `k_oopVoorbeelden.js`
-* `l_destructuring.js`
+* `l_destructuring.js` + `l_destructuringVoorbeelden.js`
