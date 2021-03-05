@@ -13,4 +13,4 @@ Dit project bevat de volgende bestanden:
 * `j_unittest.js` + `j_unittest.test.js` + `j_unittestreadme.md`
 * `k_oop.js` + `k_oopVoorbeelden.js`
 * `l_destructuring.js` + `l_destructuringVoorbeelden.js`
-* `m_passByValue.js`
+* `m_passByValue.js` + `m_passByReference.js` 
