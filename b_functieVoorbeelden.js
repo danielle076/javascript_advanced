@@ -36,7 +36,7 @@ console.log(outcomeMagic);
 
 
 // 4. Schrijf een functie die twee parameters verwacht: een woord en een karakter
-// De functie omwikkelt het woord met het karakter en geeft dit terug
+// De functie omwikkelt het woord met het karakter en geeft dit terug.
 // Uitkomst: "bril", "*" geeft "*bril*"
 // Uitkomst: "beep", "_" geeft "_beep_"
 // Uitkomst: "kaas", "Q" geeft "QkaasQ"
@@ -183,7 +183,6 @@ console.log(outputKoekje, outputVrienden);
 // Uitkomst: "madam" geeft true
 // Uitkomst: "vrienden" geeft false
 function isPalinDroom(word) {
-    // CHEESE, you can do this in fancier ways I am sure
     const reverseWord = reverseString(word);
     const palindroom = reverseWord === word;
     return palindroom;
@@ -340,7 +339,7 @@ console.log(Math.round(bmi));
 // 1 + 1 = 2
 // 1 + 2 = 3
 // 2 + 3 = 5 enz.
-// Maak een functie die je kan aanroepen door de code te schrijven: fibonacciGenerator (n)
+// Maak een functie die je kan aanroepen door de code te schrijven: fibonacciGenerator (n).
 // Waarbij n het aantal items in de reeks is.
 // Wanneer je fibonacciGenerator (3) aanroept krijg je [0, 1, 1] als output.
 // BELANGRIJK: De eerste twee getallen in de reeks moeten 0 en 1 zijn.
