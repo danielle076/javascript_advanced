@@ -80,10 +80,9 @@ for (let i = 0; i < 3; i++) {
 }
 
 // Stel je wilt geen hallo zeggen tegen studenten, maar tegen developers.
-// Bovenstaand voorbeeld is herbruikbaar maar niet configureerbaar.
-// Je maakt de code dynamisch.
+// Bovenstaand voorbeeld is herbruikbaar maar niet configureerbaar. Dit kun je doen door de code dynamisch te maken.
 
-// Je maakt een variabele "subject" aan en in de log zet je de variabele
+// Je maakt een variabele "subject" aan en in de log zet je de variabele.
 function greet2(){
     const subject = "developers"
     console.log("Hallo " + subject)
@@ -100,16 +99,16 @@ function greet3(subject){
     console.log("Hallo " + subject)
 }
 
-// Functie aanroepen met argumenten 'collega's' en 'afgestudeerden'
+// Functie aanroepen met argumenten "collega's" en "afgestudeerden"
 greet3("collega's");
 greet3("afgestudeerden");
 
-// We willen een e-mail sturen met een groet erin, om ervoor te zorgen dat hij daadwerkelijk iets verstuurd i.p.v. dat hij
+// We willen een e-mail sturen met een groet erin. Om ervoor te zorgen dat hij daadwerkelijk iets verstuurd i.p.v. dat hij
 // hem alleen in de console zet, moet je de code returnen.
 // Functie is nu herbruikbaarder: je kunt namelijk de waarde die in de functie wordt bepaald, gebruiken in de global scope
-// omdat je hem returned, je geeft hem terug aan de global scope.
+// omdat je hem returned. Je geeft hem terug aan de global scope.
 
-// Met deze code kun je NIET bij de variabele "greeting"
+// Met deze code kun je NIET bij de variabele "greeting".
 function greet4(subject){
     const greeting = "Hallo" + subject;
 }
@@ -120,7 +119,7 @@ const emailText = greeting + "wil je lid worden?"
 // De waarde van "Hallo" + subject; kun je returnen.
 // Roep de functie greet5() + subject aan.
 // emailText2 gebruik je om je e-mail te sturen.
-// Check of de e-mailtext2 klopt doe je met console.log.
+// Check of de e-mailtext2 klopt, doe je met console.log.
 function greet5(subject){
     const greeting = "Hallo " + subject;
     return greeting;
