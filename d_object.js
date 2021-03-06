@@ -1,9 +1,6 @@
-// OBJECTEN, EIGENSCHAPPEN EN METHODEN IN HET ECHTE LEVEN
+// OBJECTEN
 // In het echte leven, is een auto een object.
 // Een auto heeft eigenschappen zoals gewicht en kleur, en methoden zoals starten en stoppen.
-
-// VOORBEELD OBJECT
-// auto
 
 // VOORBEELD EIGENSCHAPPEN (PROPERTIES)
 // auto.naam = Fiat
@@ -28,7 +25,7 @@ const user = {} // dit is een object
 // Block is een statement met accolades (bijv. if-statement).
 
 // #2 HOE KUN JE EEN OBJECT HERKENNEN?
-// Object is een verzameling met data dat staat tussen {}, key value pairs.
+// Object is een verzameling met data dat staat tussen {} met key value pairs.
 const user2 = {
     firstName: "Daniëlle",
     lastName: "van den Akker"
@@ -55,7 +52,7 @@ const user3 = ["Daniëlle", "van den Akker"];
 // * Verschillende soorten data -> aan de key kan je zien wat het is
 
 // USECASE OBJECT
-// Wanneer je data wilt groeperen, gebruik je een object.
+// Wanneer je data wilt groeperen gebruik je een object.
 const car = {
     color: "red",
     manufacturer: "Tesla",
