@@ -14,7 +14,7 @@ for (let i = 0; i < grades.length; i++) {
 console.log(cumLaude);
 
 
-// 2. Check welke waarde in de array het hoogste is, en log dit in de console
+// 2. Check welke waarde in de array het hoogste is en log dit in de console.
 // Uitkomst: 9
 let highestScore = 0;
 
