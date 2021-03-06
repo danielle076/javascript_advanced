@@ -1,4 +1,4 @@
-// JAVASCRIPT FUNCTION SCOPE
+// SCOPE
 // In JavaScript zijn er twee soorten scopes:
 // * Local scope
 // * Global scope
@@ -10,7 +10,7 @@
 // Variabelen gedeclareerd binnen een functie, worden lokaal aan de functie.
 // Local variabelen hebben functie scope: ze kunnen alleen worden benaderd vanuit de functie.
 
-// Voorbeeld "example"
+// VOORBEELD EXAMPLE
 // Je gebruikt de variabele example in global scope, maar de variabele is defined in local scope.
 // Uitkomst: variabele defined in local scope en aanroepen in global geeft error.
 
@@ -21,7 +21,7 @@ console.log(example); // geeft: ReferenceError: example is not defined
 
 // Omdat local variabelen alleen binnen hun functies worden herkend, kunnen variabelen met dezelfde naam gebruikt
 // worden in verschillende functies.
-// Local variabelen worden aangemaakt wanneer een functie begint, en verwijderd wanneer de functie voltooid is.
+// Local variabelen worden aangemaakt wanneer een functie begint en verwijderd wanneer de functie voltooid is.
 
 // GLOBAL VARIABELEN
 // Een variabele die buiten een functie wordt gedeclareerd, wordt global.
@@ -62,7 +62,7 @@ console.log(example4); // geeft Daniëlle
 
 // AUTOMATISCH GLOBAL
 // Als je een waarde toekent aan een variabele die niet is gedeclareerd, wordt het automatisch een global variabele.
-// Dit voorbeeld zal een globale variabele declareren anotherExample, zelfs als de waarde wordt toegewezen binnen een functie.
+// Dit voorbeeld zal een globale variabele anotherExample declareren, zelfs als de waarde wordt toegewezen binnen een functie.
 
 myFunction();
 
