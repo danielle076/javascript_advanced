@@ -1,9 +1,9 @@
-// ARROW FUNCTIES
+// ARROW FUNCTIE
 // Arrow functies zijn geïntroduceerd in ES6.
 // Met arrow functies kunnen we kortere functie syntax schrijven.
 
 // ARROW SYNTAX (FUNCTION VS ARROW)
-// Normale functie.
+// Functie.
 function functionName(arg1, arg2) {
     // body of function
 }
@@ -14,7 +14,7 @@ const functionName = (arg1, arg2) => {
 }
 
 // EXAMPLE
-// Normale functie.
+// Functie.
 function greet(name) {
     return "Hoi " + name;
 }
@@ -33,7 +33,7 @@ const greeting2 = greet2("Daniëlle");
 console.log(greeting2);
 
 // Arrow functie stap 2.
-// Wanneer je de waarde gelijk wilt laten zien, kun je return weglaten.
+// Wanneer je de waarde gelijk wilt laten zien, kun je { return } weglaten.
 const greet3 = (name3) => "Hoi " + name3;
 
 const greeting3 = greet3("Daniëlle");
