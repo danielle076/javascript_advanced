@@ -1,9 +1,9 @@
-// JAVASCRIPT METHODE
+// METHODE
 // Een methode is een functie die een onderdeel is van een object.
 
-// VOORBEELD OBJECT & METHODE
+// VOORBEELD OBJECT & METHODE: CONSOLE.LOG
 // console is een object.
-// log is een functie die in het object zit: dat noem je een method.
+// log is een functie die in het object zit: dat noem je een methode.
 console.log();
 
 // ARRAY METHODS
