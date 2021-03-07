@@ -15,7 +15,7 @@ console.log(today);
 const dateOfBirth1 = new Date("Dec 26, 1992 15:45:55");
 const dateOfBirth2 = new Date(1992, 11, 26, 15, 45, 55);
 const dateOfBirth3 = new Date(1992, 11, 26);
-// Let op: tellen van de maand begint bij 0, dus januari is 0 en februari 1
+// Let op: tellen van de maand begint bij 0, dus januari is 0 en februari 1.
 console.log(dateOfBirth1); // geeft 1992-12-26T14:45:55.000Z
 console.log(dateOfBirth2); // geeft 1992-12-26T14:45:55.000Z
 console.log(dateOfBirth3); // geeft 1992-12-25T23:00:00.000Z
