@@ -1,7 +1,6 @@
 // 1. Gegeven: we hebben een array met e-mailaddressen van medewerkers. Voer de volgende acties uit.
 const emailadresses = ['n.eeken@novi.nl', 'n.stuivenberg@novi.nl', 'm.vandergeest@novi-education.nl', 'a.wiersma@novi.nl'];
 
-
 // 1a. Onze nieuwe medewerker Melissa moet worden toegevoegd aan de lijst met e-mailadressen. Haar email is: m.westerbroek@novi.nl
 emailadresses.push('m.westerbroek@novi.nl');
 console.log(emailadresses);
