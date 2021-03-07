@@ -10,7 +10,7 @@
 // slice() - maakt een referentieloze kopie van een deel van de array. De originele array wordt niet aangepast.
 // splice() - voegt een item toe of vervangt een item op basis van indexnummer in de array.
 
-// concat () - voegt twee arrays samen.
+// concat() - voegt twee arrays samen.
 const myGirls = ["Daniëlle", "Claudia"];
 const myBoys = ["Freckle", "Rik", "Maarten"];
 console.log(myGirls.concat(myBoys)) // geeft [ 'Daniëlle', 'Claudia', 'Freckle', 'Rik', 'Maarten' ]
