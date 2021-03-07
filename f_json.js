@@ -12,7 +12,7 @@
 
 // WAAROM JSON?
 // Het is handig dat we objecten en arrays hebben in JavaScript, maar deze datastructuren kunnen we niet over het
-// netwerk verzenden. Sterker nog, het enige wat we van de ene naar de andere computer kunnen sturen, is platte tekst.
+// netwerk verzenden. Sterker nog, het enige wat we van de ene naar de andere computer kunnen sturen is platte tekst.
 // Daarom gebruiken we JSON om JavaScript-data van de ene computer naar de andere te krijgen.
 
 // HOE JSON?
