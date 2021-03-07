@@ -1,10 +1,10 @@
 // MATH METHODS
-// Math.PI is een property en geeft pi terug (3.141592653589793).
-// Math.round() rondt een getal af naar het dichtstbijzijnde hele getal.
-// Math.sqrt() geeft de wortel van een getal terug.
-// Math.ceil() rondt een getal naar boven af.
-// Math.floor() rondt een getal naar beneden af.
-// Math.random() genereert een random getal tussen 0 en 1.
+// Math.PI - is een property en geeft pi terug (3.141592653589793).
+// Math.round() - rondt een getal af naar het dichtstbijzijnde hele getal.
+// Math.sqrt() - geeft de wortel van een getal terug.
+// Math.ceil() - rondt een getal naar boven af.
+// Math.floor() - rondt een getal naar beneden af.
+// Math.random() - genereert een random getal tussen 0 en 1.
 
 // Math.PI is een property en geeft pi terug (3.141592653589793).
 function calculateCircumference(radius) {
