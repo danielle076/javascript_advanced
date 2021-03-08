@@ -1,5 +1,5 @@
-// ARRAY METHODES
-// Om data op een handige manier te groeperen kom je vaak objecten in arrays tegenkomen, die op hun beurt waarschijnlijk
+// ARRAY ITERATION METHODES
+// Om data op een handige manier te groeperen kom je vaak objecten in arrays tegen, die op hun beurt waarschijnlijk
 // ook weer objecten of arrays bevatten. Het geeft ons de mogelijkheid om onze informatie op een logische manier op te slaan.
 // Om deze data te kunnen beheren, manipuleren en versturen heb je verschillende technieken.
 // * map()
