@@ -4,10 +4,10 @@ Unit testen van software producten worden uitgevoerd tijdens de ontwikkeling van
 
 <b>Het doel van Unit testen is:</b>
 - Het isoleren van een deel van de code
-- De juistheid van de code te verifiëren
-- Elke functie en procedure te testen
-- Bugs vroeg in de ontwikkelingscyclus op te lossen en kosten te besparen
-- Ontwikkelaars helpen de code te begrijpen en hen in staat te stellen snel veranderingen aan te brengen
+- De juistheid van de code verifiëren
+- Elke functie en procedure testen
+- Bugs vroeg in de ontwikkelingscyclus op lossen en kosten besparen
+- Ontwikkelaars helpen de code te begrijpen en hen in staat stellen snel veranderingen aan te brengen
 - Helpen bij hergebruik van code
 
 <b>Voordelen van Unit Testen:</b>
@@ -21,12 +21,12 @@ Om jest te gaan gebruiken voor je unit testen, moet je hem eerst installeren. Di
 
 Ga naar WebStorm of een andere JavaScript IDE en voer de volgende stappen uit:
 1. ga in je map/project staan die je wilt gaan unit testen 
-2. ga naar je terminal en type "npm init" en package.json wordt aangemaakt
+2. ga naar je terminal, type "npm init" en package.json wordt aangemaakt
 3. type in je terminal "npm install -D jest" en jest wordt geïnstalleerd
 4. maak een test bestand aan in je map en die noem je "projectnaam.test.js"
 
 Wanneer je test en functies hebt geschreven kun je deze als volgt testen in terminal:
-- met "npx jest" voer je de test 1-malig uit 
+- met "npx jest" voer je de test eenmalig uit 
 - met "npx jest -watchAll" zal hij bij elke aanpassing automatisch de test uitvoeren 
 - met ctrl + c kun je de test stoppen
 
