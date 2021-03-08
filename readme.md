@@ -11,8 +11,8 @@ Dit project bevat de volgende bestanden:
   * `e_methodMath`
   * `e_methodString` 
   * `e_methodVoorbeelden.js`
-* `f_json.js`
-* `f_arraymethodes.js` + `f_arraymethodesVoorbeelden.js`
+* `f_arrayiterationmethods.js` + `f_arrayiterationmethodsVoorbeelden.js`
+* `g_json.js`
 * `h_dom.js` + `h_dom.html`
 * `i_api.js` +  `i_api.html`
 * `j_unittest.js` + `j_unittest.test.js` + `j_unittestreadme.md`
