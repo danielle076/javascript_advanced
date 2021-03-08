@@ -1,10 +1,9 @@
 // JAVASCRIPT IN DE FRONTEND: HET HTML DOM
-
 // WAT IS DOM
 // DOM staat voor Document Object Model.
 // Wanneer een webpagina wordt geladen, maakt de browser een Document Object Model van de pagina.
 // Het definieert de logische structuur van documenten en de manier waarop een document wordt geraadpleegd en gemanipuleerd.
-// Het HTML DOM-model is opgebouwd als een boom van Objecten: https://www.w3schools.com/js/pic_htmltree.gif.
+// Het HTML DOM-model is opgebouwd als een boom van Objecten: https://www.w3schools.com/js/pic_htmltree.gif
 
 // WAT KAN JE ERMEE
 // Met het objectmodel kan JavaScript HTML dynamisch maken.
@@ -17,21 +16,21 @@
 // * JavaScript kan nieuwe HTML-gebeurtenissen in de pagina maken.
 
 // DE BELANGRIJKSTE METHODES VAN DE DOM
-// - document.getElementById -> selecteer 1 enkel element op basis van id.
-// - textContent -> kan je veranderen met JavaScript.
-// - document.getElementsByClassName -> selecteer meerdere elementen op basis van class.
-// - document.addEventListener ->
+// - document.getElementById: selecteer 1 enkel element op basis van id
+// - textContent: kan je veranderen met JavaScript
+// - document.getElementsByClassName: selecteer meerdere elementen op basis van class
+// - document.addEventListener:
 //   - Laat de browser luisteren naar een event (vaak gebruikers interactie)
 //   - Je kan een functie meegeven die wordt uitgevoerd zodra de gebruiker iets doet
-// - document.createElement -> maak element (niet te zien)
-// - document.appendChild -> plak element op de pagina (nu wel te zien)
-// - document.setAttribute -> een attribuut toevoegen (class, id, type)
+// - document.createElement: maakt element (niet te zien)
+// - document.appendChild: plakt element op de pagina (nu wel te zien)
+// - document.setAttribute: een attribuut toevoegen (class, id, type)
 // - document.removeAttribute
 // * Bonus
-// - element.remove() -> haalt een element weg
+// - element.remove(): haalt een element weg
 // - kleurtjes toevoegen / veranderen
-//   - class toevoegen -> in css class definiëren
-//   - direct met JS -> element.style.backgroundColor = "orange"
+//   - class toevoegen: in css class definiëren
+//   - direct met JS: element.style.backgroundColor = "orange"
 
 // INCORPORATE JAVASCRIPT
 // Voordat we JavaScript kunnen gebruiken op onze website moeten we het JavaScript file linken met de HTML file.
