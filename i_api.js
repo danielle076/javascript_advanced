@@ -1,5 +1,4 @@
 // API IN DE DOM
-
 // CHECKLIST INSTALLEREN
 // - [] NPM installeren (npm init: installeert package.json)
 // - [] Axios installeren (npm install axios: hiermee kun je data ophalen, installeert package-lock.json)
