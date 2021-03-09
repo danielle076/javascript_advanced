@@ -1,3 +1,8 @@
+// DESTRUCTURING
+// Destructuring is een schrijfwijze in JavaScript die ervoor zorgt dat we data gemakkelijker uit arrays, objecten en
+// andere datasets kunnen halen. Deze schrijfwijze is vaak beknopter en duidelijker dan de traditionele manier. Dit is
+// handig, omdat we vaak te maken hebben met grote datasets die we van een externe bron ontvangen.
+
 // DESTRUCTURING OBJECTS
 
 // VOORBEELD #1: OBJECT PERSON
@@ -38,7 +43,7 @@ console.log(education); // geeft h.pieters@novi-education.nl
 
 // VOORBEELD #3: HERNOEMEN
 // Soms krijgen we data binnen (bijvoorbeeld via API) die hele vreemde namen bevat. Of onder een naam die in ons script
-// al in gebruik is, door een andere variabele. Of is het simpelweg logischer om de data een andere naam te geven.
+// al in gebruik is door een andere variabele. Of is het simpelweg logischer om de data een andere naam te geven.
 const studentInformation = {
     first: 'Henk',
     last: 'Pieters',
@@ -76,6 +81,7 @@ console.log(dogName) // geeft "Pluisje"
 console.log(catName) // geeft "Minoes"
 
 // DESTRUCTURING ARRAYS
+// Destructuring van arrays is afhankelijk van de volgorde.
 
 // VOORBEELD #1: SOMEARRAY
 const someArray = ["one", "two", "three"];
@@ -86,7 +92,7 @@ console.log(first); // geeft one
 console.log(second); // geeft two
 console.log(third); // geeft three
 
-// VOORBEELD #2: DESTRUCTURING VAN ARRAYS IS AFHANKELIJK VAN DE VOLGORDE
+// VOORBEELD #2
 // Waardes hebben in arrays geen namen, zoals de keys in objecten. We weten alleen welk item we aanspreken op basis van
 // de volgorde. Wanneer je items in een array destructured, mag je ze elke gewenste naam geven die je wil. Principes als
 // "hernoemen" zijn hier niet aan de orde.
@@ -128,7 +134,7 @@ const [firstName,, secondName] = getNames2();
 console.log(firstName); // geeft Henk
 console.log(secondName); // geeft Jan
 
-// Wanneer je niet weet hoe lang de array is en je wilt alleen het laatste gedeelte, gebruik je ... (spread operator).
+// Wanneer je niet weet hoe lang de array is en je wilt alleen het laatste gedeelte, gebruik je ... (rest operator).
 
 function getNames3() {
     return ["Henk", "Piet", "Jan", "Klaas"];
@@ -138,3 +144,8 @@ const [begin, ...rest] = getNames3();
 
 console.log(begin); // geeft Henk
 console.log(rest); // geeft [ 'Piet', 'Jan', 'Klaas' ]
+
+// VERSCHIL TUSSEN ARRAY DESTRUCTURING EN OBJECT DESTRUCTURING
+// - Bij array gebruikt je [] en bij object {}
+// - Array is afhankelijk van de locatie
+// - Bij een array kun je het alles noemen wat je wilt
