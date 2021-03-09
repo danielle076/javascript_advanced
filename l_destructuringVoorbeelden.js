@@ -95,3 +95,66 @@ function getDetails(name, age) {
 // Uitkomst:
 const [nameString, ageString] = getDetails("Daniëlle", 37);
 console.log(nameString, ageString); // Your name is Daniëlle You are 37 years old
+
+
+// 8. We hebben een survey programma. In de terminal komt de vraag: How do you feel about JS basics? Hier kun je een
+// antwoord op geven. Vervolgens krijg je de volgende vraag: Are you ready for React? Je krijgt opties om uit te
+// kiezen en je kan extra informatie toevoegen die je kwijt wilt.
+// Zorg ervoor dat dit programma een destructuring toegepast krijgt.
+
+// const readline = require("readline-sync"); // npm install readline-sync
+//
+// const feeling = readline.question("How do you feel about JS basics?")
+// console.log("Are you ready for React?")
+// const options = [
+//   "Yes",
+//   "I don't know how to react...",
+//   "No, but are we ever truly ready?",
+// ];
+// const choice = readline.keyInSelect(options);
+//
+// const anythingToAdd = readline.question("Any thoughts you want to add? ");
+//
+// console.log(`
+// You feel: ${feeling}
+// Ready for React? ${options[choice]}
+// Additional thoughts: ${anythingToAdd}
+// `);
+
+const readline = require("readline-sync");
+const { question, keyInSelect }  = readline
+
+const feeling = question("How do you feel about JS basics?")
+console.log("Are you ready for React?")
+const options = [
+  "Yes",
+  "I don't know how to react...",
+  "No, but are we ever truly ready?",
+];
+const choice = keyInSelect(options);
+
+const anythingToAdd = question("Any thoughts you want to add? ");
+
+console.log(`
+You feel: ${feeling}
+Ready for React? ${options[choice]}
+Additional thoughts: ${anythingToAdd}
+`);
+
+
+// 9. We hebben een to do overzicht.
+// Zorg ervoor dat dit programmaatje een destructuring toegepast krijgt.
+
+// const todos = ["learn JavaScript", "learn React", "find colleagues"];
+//
+// console.log("First we", todos[0]);
+// console.log("Then we", todos[1]);
+// console.log("Finally", todos[2]);
+
+const todos = ["learn JavaScript", "learn React", "find colleagues"];
+
+const [JS, react, collagues] = todos
+
+console.log("First we", JS);
+console.log("Then we", react);
+console.log("Finally", collagues);
