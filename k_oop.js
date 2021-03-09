@@ -10,7 +10,7 @@
 // informatie in het object verbergt, zodat ze niet toegankelijk is.
 
 // VOORBEELD
-// We hebben twee objecten: user1 en user2. Deze hebben 1 methode “login” en deze heeft 1 parameter inputPassword. De
+// We hebben twee objecten: user1 en user2. Deze hebben 1 methode “login” en deze heeft 1 parameter "inputPassword". De
 // functie vergelijkt de inputPassword met wat je in je account heb staan “1234” of “abcd”.
 const user1 = {
     userName: "Danielle",
@@ -91,7 +91,7 @@ console.log("3", new User2());
 // We zeggen “new user” en dan wordt de constructor aangeroepen. Dus als je een instantie maakt wordt de constructor aangeroepen.
 
 // Volgende stap is de key values in de constructor zetten. Je kan naar een object verwijzen met het this keyword.
-// Wanneer je nu de constructor aanroept krijg je het volgende.
+// Wanneer je de constructor aanroept krijg je het volgende.
 class User3{
     constructor() {
         console.log("CONSTRUCTOR AANROEPEN", this);
@@ -150,9 +150,9 @@ console.log("2", new User5("Freckle"));
 // CONSTRUCTOR AANROEPEN User5 {}
 // 2 User5 { userName: 'Freckle' }
 
-// We hebben de new userName opgeslagen als this.userName
+// We hebben de new userName opgeslagen als this.userName.
 
-// Parameters en argumenten maken voor email (this.email, parameter en argument) en password (this.password, parameter en argument).
+// We gaan parameters en argumenten maken voor email (this.email, parameter en argument) en password (this.password, parameter en argument).
 class User6{
     constructor(userName, email, password) {
         this.userName = userName;
@@ -217,7 +217,7 @@ console.log("1", new User8("Danielle", "intoyou@gmail.com", "1234"));
 console.log("2", new User8("Freckle", "freckle@gmail.com", "abcd"));
 // Wanneer je logged zie je niet de methode. Je ziet alleen de keys en de values.
 
-// Maak variabelen aan en controleer het wachtwoord.
+// Maak de variabelen aan en controleer het wachtwoord.
 const danielle = new User8("Danielle", "intoyou@gmail.com", "1234");
 const freckle = new User8("Freckle", "freckle@gmail.com", "abcd");
 
